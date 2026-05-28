@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 6a3b11dcc0a1e26419a19a04e1e91336
+guid: 9f63f40fd514b604f888b410317c93da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1534220582340397973
-    second: BANCOYLUZ_0
-  - first:
-      213: 7744046738275283863
-    second: BANCOYLUZ_1
+      213: 434684701918818832
+    second: BANCO_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,33 +100,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BANCOYLUZ_0
+      name: BANCO_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 0
-        width: 38
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b64f18e428a55bae0800000000000000
-      internalID: -1534220582340397973
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BANCOYLUZ_1
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 8
+        x: 9
+        y: 2
         width: 46
         height: 27
       alignment: 0
@@ -140,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 793bbee8a71687b60800000000000000
-      internalID: 7744046738275283863
+      spriteID: 012fa2fee6f480600800000000000000
+      internalID: 434684701918818832
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BANCOYLUZ_0: -1534220582340397973
-      BANCOYLUZ_1: 7744046738275283863
+      BANCO_0: 434684701918818832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
