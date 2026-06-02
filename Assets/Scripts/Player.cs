@@ -17,6 +17,16 @@ public class Player : MonoBehaviour
     // Conectar SpriteRenderer
     private SpriteRenderer sr;
 
+    // Animaciones
+    private float movimientoX;
+    private float movimientoY;
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -25,6 +35,12 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        // Animacion eje Horizontal
+        movimientoX = Input.GetAxisRaw("Horizontal");
+        movimientoY = Input.GetAxisRaw("Vertical");
+        animator.SetFloat("MovimientoX", movimientoX);
+        animator.SetFloat("MovimientoY", movimientoY);
+
         // Input de movimiento (WASD o flechas) 
         movimiento.x = Input.GetAxisRaw("Horizontal"); // A/D o flechas
         movimiento.y = Input.GetAxisRaw("Vertical");   // W/S o flechas
