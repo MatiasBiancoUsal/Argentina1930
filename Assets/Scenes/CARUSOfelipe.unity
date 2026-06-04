@@ -1183,7 +1183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -434.8, y: -201}
+  m_AnchoredPosition: {x: -722, y: -423}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584678177
@@ -4558,7 +4558,7 @@ GameObject:
   - component: {fileID: 1703838004}
   - component: {fileID: 1703838003}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas Pistas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5058,7 +5058,7 @@ GameObject:
   - component: {fileID: 1933545296}
   - component: {fileID: 1933545295}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas Monedas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7714,6 +7714,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1933545298}
+  - {fileID: 1703838006}
   - {fileID: 1695787461}
   - {fileID: 1108825667}
   - {fileID: 205597697}
@@ -7726,4 +7727,3 @@ SceneRoots:
   - {fileID: 872059062}
   - {fileID: 2125018147}
   - {fileID: 845503313}
-  - {fileID: 1703838006}

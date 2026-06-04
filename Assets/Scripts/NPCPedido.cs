@@ -15,7 +15,7 @@ public class NPCPedido : MonoBehaviour
 
     void Start()
     {
-        // Asegurarse que el icono empieza apagado
+        // Icono empieza apagado
         if (iconoAlerta != null)
             iconoAlerta.SetActive(false);
 

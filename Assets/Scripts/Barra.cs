@@ -6,7 +6,7 @@ public class Barra : MonoBehaviour
     public float tiempoPreparacion = 3f;
 
     [Header("Prefab del pedido")]
-    public GameObject prefabPedido; // Arrastrá el prefab del sprite acá
+    public GameObject prefabPedido; // Arrastrar el prefab del sprite acá
 
     public enum EstadoBarra { Libre, Preparando, PedidoListo }
     public EstadoBarra estado = EstadoBarra.Libre;

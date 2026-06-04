@@ -8,7 +8,7 @@ public class PlayerInteraccion : MonoBehaviour
     private GameObject spritePedido = null; // El sprite que sigue al jugador
 
     [Header("Posicion del pedido sobre el personaje")]
-    public Vector3 offsetPedido = new Vector3(0.3f, 0.5f, 0f); // Ajustá desde el Inspector
+    public Vector3 offsetPedido = new Vector3(0.3f, 0.5f, 0f); // Para acomadar el sprite desde el inspector
 
     private GameManager gameManager;
 

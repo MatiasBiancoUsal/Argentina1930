@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
             enSigilo = !enSigilo;
             Debug.Log("Sigilo: " + (enSigilo ? "ACTIVADO" : "DESACTIVADO"));
 
-            // Feedback visual opcional: tinte azul en sigilo // Se pone como transparente
+            // Feedback visual: tinte azul en sigilo // Se pone como transparente
             if (sr != null)
                 sr.color = enSigilo ? new Color(0.5f, 0.7f, 1f, 0.75f) : Color.white;
         }
