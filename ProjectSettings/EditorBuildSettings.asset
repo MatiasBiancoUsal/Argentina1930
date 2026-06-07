@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CARUSOfelipe.unity
     guid: 08369185afd092c46923c436bc55c519
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/DEFIGUEIREDOjoaquin.unity
     guid: 04050ad63b803a048a099cbab6d784c5
   m_configObjects:
