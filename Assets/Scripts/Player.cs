@@ -10,6 +10,16 @@ public class Player : MonoBehaviour
     [Header("Estado")]
     public bool enSigilo = false;
 
+
+    [Header("Agacharse")]
+    public bool estaAgachado = false;
+    public float velocidadAgachado = 1.5f;
+
+    private BoxCollider2D col;
+    private Vector2 colSizeOriginal;
+    private Vector2 colOffsetOriginal;
+
+
     private Rigidbody2D rb;
     private SpriteRenderer sr;
 
@@ -19,8 +29,10 @@ public class Player : MonoBehaviour
     private Vector2 movimiento;
     private float velocidadActual;
 
+    private bool enZonaPasoBajo = false;
 
-   
+
+
 
 
     void Awake()
@@ -28,6 +40,11 @@ public class Player : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+
+        col = GetComponent<BoxCollider2D>();
+        colSizeOriginal = col.size;
+        colOffsetOriginal = col.offset;
+
     }
 
     void Start()
@@ -69,7 +86,53 @@ public class Player : MonoBehaviour
                 sr.color = enSigilo ? new Color(0.5f, 0.7f, 1f, 0.75f) : Color.white;
         }
 
+
+
+        // Toggle agacharse con C
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            estaAgachado = true;
+            col.size = new Vector2(colSizeOriginal.x, colSizeOriginal.y * 0.5f);
+            col.offset = new Vector2(colOffsetOriginal.x, colOffsetOriginal.y - colSizeOriginal.y * 0.25f);
+            animator.SetBool("Agachado", true);
+        }
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            estaAgachado = false;
+            col.size = colSizeOriginal;
+            col.offset = colOffsetOriginal;
+            animator.SetBool("Agachado", false);
+        }
+        if (Input.GetKeyDown(KeyCode.C) && enZonaPasoBajo)
+        {
+            GetComponent<BoxCollider2D>().isTrigger = true;
+        }
+        if (Input.GetKeyUp(KeyCode.C))
+        {
+            GetComponent<BoxCollider2D>().isTrigger = false;
+        }
+
         // Prioridad de velocidad
+
+        if (estaAgachado)
+        {
+            velocidadActual = velocidadAgachado;
+        }
+        else if (enSigilo)
+        {
+            velocidadActual = velocidadSigilo;
+        }
+        else if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        {
+            velocidadActual = velocidadSprint;
+        }
+        else
+        {
+            velocidadActual = velocidadNormal;
+        }
+
+
+
         // Sigilo tiene prioridad sobre sprint (no tiene sentido correr en sigilo)
         if (enSigilo)
         {
@@ -83,7 +146,28 @@ public class Player : MonoBehaviour
         {
             velocidadActual = velocidadNormal;
         }
+
+
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.GetComponent<ZonaPasoBajo>() != null)
+        {
+            enZonaPasoBajo = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.GetComponent<ZonaPasoBajo>() != null)
+        {
+            enZonaPasoBajo = false;
+            GetComponent<BoxCollider2D>().isTrigger = false;
+        }
+    }
+
+
 
     void FixedUpdate()
     {
