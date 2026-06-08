@@ -5,22 +5,20 @@ using UnityEngine.UI;
 
 public class LibretaPistas : MonoBehaviour
 {
-    // ── Lo que ya tenias ─────────────────────────────────────────────────────
+    [Header("Panel Libreta")]
     public GameObject panelLibreta;
     public TMP_Text textoPistas;
     public GameObject iconoNuevaPista;
 
-    private List<string> pistas = new List<string>();
-
-    // ── Nuevo: Fotografias reveladas ─────────────────────────────────────────
+    [Header("Fotografias Reveladas")]
     public GameObject panelFotografias;
     public Transform gridFotos;
     public GameObject prefabMiniatura;
     public TMP_Text textoContadorFotos;
 
+    private List<string> pistas = new List<string>();
     private List<Texture2D> fotos = new List<Texture2D>();
-
-    // ────────────────────────────────────────────────────────────────────────
+    private bool mostrandoFotos = false;
 
     void Start()
     {
@@ -35,8 +33,6 @@ public class LibretaPistas : MonoBehaviour
         ActualizarContadorFotos();
     }
 
-    // ── Metodos originales (sin cambios) ─────────────────────────────────────
-
     public void AbrirCerrarLibreta()
     {
         bool abrir = !panelLibreta.activeSelf;
@@ -44,6 +40,9 @@ public class LibretaPistas : MonoBehaviour
 
         if (abrir && iconoNuevaPista != null)
             iconoNuevaPista.SetActive(false);
+
+        if (abrir)
+            MostrarPestanaPistas();
     }
 
     public void AgregarPista(string nuevaPista)
@@ -65,8 +64,6 @@ public class LibretaPistas : MonoBehaviour
             textoPistas.text += "• " + pista + "\n\n";
     }
 
-    // ── Metodos nuevos: Fotografias ──────────────────────────────────────────
-
     public void AgregarFoto(Texture2D foto)
     {
         if (foto == null) return;
@@ -87,10 +84,22 @@ public class LibretaPistas : MonoBehaviour
             iconoNuevaPista.SetActive(true);
     }
 
+    public void ToggleFotos()
+    {
+        mostrandoFotos = !mostrandoFotos;
+
+        if (mostrandoFotos)
+            MostrarPestanaFotos();
+        else
+            MostrarPestanaPistas();
+    }
+
     public void MostrarPestanaPistas()
     {
+        mostrandoFotos = false;
+
         if (textoPistas != null)
-            textoPistas.transform.parent.gameObject.SetActive(true);
+            textoPistas.gameObject.SetActive(true);
 
         if (panelFotografias != null)
             panelFotografias.SetActive(false);
@@ -98,8 +107,10 @@ public class LibretaPistas : MonoBehaviour
 
     public void MostrarPestanaFotos()
     {
+        mostrandoFotos = true;
+
         if (textoPistas != null)
-            textoPistas.transform.parent.gameObject.SetActive(false);
+            textoPistas.gameObject.SetActive(false);
 
         if (panelFotografias != null)
             panelFotografias.SetActive(true);
