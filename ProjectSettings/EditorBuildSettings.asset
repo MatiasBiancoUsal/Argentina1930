@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: b56b6857c1990d448bc8fc85221f8ef9
   - enabled: 1
+    path: Assets/Scenes/KARABINjuancruz.unity
+    guid: fab80be7fb88ae94b9fd6da1204191e4
+  - enabled: 1
     path: Assets/Scenes/CARUSOfelipe.unity
     guid: 08369185afd092c46923c436bc55c519
   - enabled: 0
