@@ -1,58 +1,58 @@
 fileFormatVersion: 2
-guid: 086246db081712b47bdca450850b244b
+guid: 795f5647cbc0f6246851a00c59a90eb8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2797063328629498037
-    second: Item de Cuaderno (1)_0
+      213: 1110507663641705925
+    second: CUADERNO-BYN_0
   - first:
-      213: 6691768671090216608
-    second: Item de Cuaderno (1)_1
+      213: -4368903894660080657
+    second: CUADERNO-BYN_1
   - first:
-      213: -7159296870700977533
-    second: Item de Cuaderno (1)_2
+      213: 2258754706311498338
+    second: CUADERNO-BYN_2
   - first:
-      213: -4692636907662431323
-    second: Item de Cuaderno (1)_3
+      213: -122322633341436236
+    second: CUADERNO-BYN_3
   - first:
-      213: 5696449870429853219
-    second: Item de Cuaderno (1)_4
+      213: 7078392934751563944
+    second: CUADERNO-BYN_4
   - first:
-      213: 2959817693389667365
-    second: Item de Cuaderno (1)_5
+      213: 3435443267684325735
+    second: CUADERNO-BYN_5
   - first:
-      213: 1739759720207076245
-    second: Item de Cuaderno (1)_6
+      213: 519565937472541991
+    second: CUADERNO-BYN_6
   - first:
-      213: -492704797623959845
-    second: Item de Cuaderno (1)_7
+      213: 233748001917170689
+    second: CUADERNO-BYN_7
   - first:
-      213: 6497715160532336160
-    second: Item de Cuaderno (1)_8
+      213: 2038824121071643467
+    second: CUADERNO-BYN_8
   - first:
-      213: 3857570544076031406
-    second: Item de Cuaderno (1)_9
+      213: 8916700385487886128
+    second: CUADERNO-BYN_9
   - first:
-      213: -960653722681685647
-    second: Item de Cuaderno (1)_10
+      213: -2065197807198415837
+    second: CUADERNO-BYN_10
   - first:
-      213: 6692863640211995148
-    second: Item de Cuaderno (1)_11
+      213: -22376285157985422
+    second: CUADERNO-BYN_11
   - first:
-      213: -2560819920251990445
-    second: Item de Cuaderno (1)_12
+      213: -2851911806953015463
+    second: CUADERNO-BYN_12
   - first:
-      213: -534408560651387376
-    second: Item de Cuaderno (1)_13
+      213: -6961486831530693894
+    second: CUADERNO-BYN_13
   - first:
-      213: -5508395358744727056
-    second: Item de Cuaderno (1)_14
+      213: 3658179894262424864
+    second: CUADERNO-BYN_14
   - first:
-      213: 6512630626674497559
-    second: Item de Cuaderno (1)_15
+      213: -6409615777600861878
+    second: CUADERNO-BYN_15
   - first:
-      213: 9083922533961486533
-    second: Item de Cuaderno (1)_16
+      213: 3233273381399871034
+    second: CUADERNO-BYN_16
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -148,7 +148,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_0
+      name: CUADERNO-BYN_0
       rect:
         serializedVersion: 2
         x: 3
@@ -163,14 +163,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b0ab35274a21d620800000000000000
-      internalID: 2797063328629498037
+      spriteID: 5cd76bb16d0596f00800000000000000
+      internalID: 1110507663641705925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_1
+      name: CUADERNO-BYN_1
       rect:
         serializedVersion: 2
         x: 35
@@ -185,14 +185,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ae8b6fd620fddc50800000000000000
-      internalID: 6691768671090216608
+      spriteID: feb17f42e098e53c0800000000000000
+      internalID: -4368903894660080657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_2
+      name: CUADERNO-BYN_2
       rect:
         serializedVersion: 2
         x: 35
@@ -207,14 +207,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3827d4c7d6115ac90800000000000000
-      internalID: -7159296870700977533
+      spriteID: 26a40702075b85f10800000000000000
+      internalID: 2258754706311498338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_3
+      name: CUADERNO-BYN_3
       rect:
         serializedVersion: 2
         x: 67
@@ -229,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5aba4ea589760eeb0800000000000000
-      internalID: -4692636907662431323
+      spriteID: 4be71bb863c6d4ef0800000000000000
+      internalID: -122322633341436236
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_4
+      name: CUADERNO-BYN_4
       rect:
         serializedVersion: 2
         x: 99
@@ -251,14 +251,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3269acfd9fadd0f40800000000000000
-      internalID: 5696449870429853219
+      spriteID: 8a070880fd08b3260800000000000000
+      internalID: 7078392934751563944
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_5
+      name: CUADERNO-BYN_5
       rect:
         serializedVersion: 2
         x: 131
@@ -273,14 +273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 52c3866a282631920800000000000000
-      internalID: 2959817693389667365
+      spriteID: 769d45043752daf20800000000000000
+      internalID: 3435443267684325735
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_6
+      name: CUADERNO-BYN_6
       rect:
         serializedVersion: 2
         x: 163
@@ -295,14 +295,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59bc9757f3ed42810800000000000000
-      internalID: 1739759720207076245
+      spriteID: 7259174a77ed53700800000000000000
+      internalID: 519565937472541991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_7
+      name: CUADERNO-BYN_7
       rect:
         serializedVersion: 2
         x: 195
@@ -317,14 +317,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bde3e76d89f8929f0800000000000000
-      internalID: -492704797623959845
+      spriteID: 104fa3db1907e3300800000000000000
+      internalID: 233748001917170689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_8
+      name: CUADERNO-BYN_8
       rect:
         serializedVersion: 2
         x: 227
@@ -339,14 +339,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 02e333b13858c2a50800000000000000
-      internalID: 6497715160532336160
+      spriteID: b4b29f76cbb5b4c10800000000000000
+      internalID: 2038824121071643467
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_9
+      name: CUADERNO-BYN_9
       rect:
         serializedVersion: 2
         x: 259
@@ -361,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea589a7b8f7d88530800000000000000
-      internalID: 3857570544076031406
+      spriteID: 037189502cb7ebb70800000000000000
+      internalID: 8916700385487886128
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_10
+      name: CUADERNO-BYN_10
       rect:
         serializedVersion: 2
         x: 3
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 179c66b67821ba2f0800000000000000
-      internalID: -960653722681685647
+      spriteID: 324d5074981f653e0800000000000000
+      internalID: -2065197807198415837
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_11
+      name: CUADERNO-BYN_11
       rect:
         serializedVersion: 2
         x: 67
@@ -405,14 +405,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c0ab6fc3504d1ec50800000000000000
-      internalID: 6692863640211995148
+      spriteID: 273f3cf13e080bff0800000000000000
+      internalID: -22376285157985422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_12
+      name: CUADERNO-BYN_12
       rect:
         serializedVersion: 2
         x: 99
@@ -427,14 +427,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 35ec2afa9d3267cd0800000000000000
-      internalID: -2560819920251990445
+      spriteID: 957b2d75259fb68d0800000000000000
+      internalID: -2851911806953015463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_13
+      name: CUADERNO-BYN_13
       rect:
         serializedVersion: 2
         x: 131
@@ -449,14 +449,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 01e3279de366598f0800000000000000
-      internalID: -534408560651387376
+      spriteID: afaad0a3c94d36f90800000000000000
+      internalID: -6961486831530693894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_14
+      name: CUADERNO-BYN_14
       rect:
         serializedVersion: 2
         x: 163
@@ -471,14 +471,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f13c9f1b9f3e83b0800000000000000
-      internalID: -5508395358744727056
+      spriteID: 025ecf16b3774c230800000000000000
+      internalID: 3658179894262424864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_15
+      name: CUADERNO-BYN_15
       rect:
         serializedVersion: 2
         x: 195
@@ -493,14 +493,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7185340bc03816a50800000000000000
-      internalID: 6512630626674497559
+      spriteID: a498c5de8687c07a0800000000000000
+      internalID: -6409615777600861878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Item de Cuaderno (1)_16
+      name: CUADERNO-BYN_16
       rect:
         serializedVersion: 2
         x: 227
@@ -515,8 +515,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c0d0fb7a63901e70800000000000000
-      internalID: 9083922533961486533
+      spriteID: a3eb0108205eedc20800000000000000
+      internalID: 3233273381399871034
       vertices: []
       indices: 
       edges: []
@@ -535,23 +535,23 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Item de Cuaderno (1)_0: 2797063328629498037
-      Item de Cuaderno (1)_1: 6691768671090216608
-      Item de Cuaderno (1)_10: -960653722681685647
-      Item de Cuaderno (1)_11: 6692863640211995148
-      Item de Cuaderno (1)_12: -2560819920251990445
-      Item de Cuaderno (1)_13: -534408560651387376
-      Item de Cuaderno (1)_14: -5508395358744727056
-      Item de Cuaderno (1)_15: 6512630626674497559
-      Item de Cuaderno (1)_16: 9083922533961486533
-      Item de Cuaderno (1)_2: -7159296870700977533
-      Item de Cuaderno (1)_3: -4692636907662431323
-      Item de Cuaderno (1)_4: 5696449870429853219
-      Item de Cuaderno (1)_5: 2959817693389667365
-      Item de Cuaderno (1)_6: 1739759720207076245
-      Item de Cuaderno (1)_7: -492704797623959845
-      Item de Cuaderno (1)_8: 6497715160532336160
-      Item de Cuaderno (1)_9: 3857570544076031406
+      CUADERNO-BYN_0: 1110507663641705925
+      CUADERNO-BYN_1: -4368903894660080657
+      CUADERNO-BYN_10: -2065197807198415837
+      CUADERNO-BYN_11: -22376285157985422
+      CUADERNO-BYN_12: -2851911806953015463
+      CUADERNO-BYN_13: -6961486831530693894
+      CUADERNO-BYN_14: 3658179894262424864
+      CUADERNO-BYN_15: -6409615777600861878
+      CUADERNO-BYN_16: 3233273381399871034
+      CUADERNO-BYN_2: 2258754706311498338
+      CUADERNO-BYN_3: -122322633341436236
+      CUADERNO-BYN_4: 7078392934751563944
+      CUADERNO-BYN_5: 3435443267684325735
+      CUADERNO-BYN_6: 519565937472541991
+      CUADERNO-BYN_7: 233748001917170689
+      CUADERNO-BYN_8: 2038824121071643467
+      CUADERNO-BYN_9: 8916700385487886128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd0d21bb445bb834da3a6cd6879ad5c4
+guid: 4aad9d9bb1c1e3b48b955fa16f9b600a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8349491019124560776
-    second: Item de Cuaderno_0
+      213: 4542733977887926063
+    second: BallonPixelArt_1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +96,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item de Cuaderno_0
+      name: BallonPixelArt_1_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 28
-        height: 31
+        x: 7
+        y: 8
+        width: 18
+        height: 13
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87c24c5d726a02c80800000000000000
-      internalID: -8349491019124560776
+      spriteID: f276b150c780b0f30800000000000000
+      internalID: 4542733977887926063
       vertices: []
       indices: 
       edges: []
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Item de Cuaderno_0: -8349491019124560776
+      BallonPixelArt_1_0: 4542733977887926063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

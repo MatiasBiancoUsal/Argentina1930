@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd0d21bb445bb834da3a6cd6879ad5c4
+guid: 5156206c61fc76a44b37571ba284be3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8349491019124560776
-    second: Item de Cuaderno_0
+      213: 7696756348836970457
+    second: SpriteExclamacionn-BYN_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Item de Cuaderno_0
+      name: SpriteExclamacionn-BYN_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1
-        width: 28
-        height: 31
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87c24c5d726a02c80800000000000000
-      internalID: -8349491019124560776
+      spriteID: 9dff82fbe1f50da60800000000000000
+      internalID: 7696756348836970457
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Item de Cuaderno_0: -8349491019124560776
+      SpriteExclamacionn-BYN_0: 7696756348836970457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
