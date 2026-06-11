@@ -32,6 +32,13 @@ public class Player : MonoBehaviour
     private bool enZonaPasoBajo = false;
 
 
+    // Audio
+
+    private AudioSource audioSourcePasos;
+
+    [SerializeField] private AudioClip clipPasos;
+
+
 
 
 
@@ -51,10 +58,20 @@ public class Player : MonoBehaviour
     {
         animator.SetFloat("UltimoX", 0f);
         animator.SetFloat("UltimoY", -1f);
+
+        
+        audioSourcePasos = GetComponent<AudioSource>();
+        audioSourcePasos.clip = clipPasos;
+
+
     }
 
     void Update()
     {
+
+
+
+
         // Animacion eje Horizontal Y Vertical
         movimiento.x = Input.GetAxisRaw("Horizontal");
         movimiento.y = Input.GetAxisRaw("Vertical");
@@ -85,6 +102,25 @@ public class Player : MonoBehaviour
             if (sr != null)
                 sr.color = enSigilo ? new Color(0.5f, 0.7f, 1f, 0.75f) : Color.white;
         }
+
+
+
+
+        // Sonido de pasos
+        bool seEstaMoviendo = movimiento.magnitude > 0.1f;
+        // Debug.Log("Moviendose: " + seEstaMoviendo + " | Sigilo: " + enSigilo + " | Playing: " + audioSourcePasos.isPlaying);
+
+        if (seEstaMoviendo && !enSigilo)
+        {
+            if (!audioSourcePasos.isPlaying)
+                audioSourcePasos.Play();
+        }
+        else
+        {
+            if (audioSourcePasos.isPlaying)
+                audioSourcePasos.Stop();
+        }
+
 
 
 
