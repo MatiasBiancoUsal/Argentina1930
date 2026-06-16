@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 36c20dbd0e9fbf148a8ddaad2b15a258
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5554692053033119261
+    second: 1 Edificios_0
+  - first:
+      213: 5760188014700680520
+    second: 1 Edificios_1
+  - first:
+      213: -698348316961228149
+    second: 1 Edificios_2
+  - first:
+      213: -851844691757439999
+    second: 1 Edificios_3
+  - first:
+      213: -8815905585533894729
+    second: 1 Edificios_4
+  - first:
+      213: -5142667242680625633
+    second: 1 Edificios_5
+  - first:
+      213: -1250027446392648847
+    second: 1 Edificios_6
+  - first:
+      213: -8079499591385454041
+    second: 1 Edificios_7
+  - first:
+      213: -6297215145130660521
+    second: 1 Edificios_8
+  - first:
+      213: -5693997530589139170
+    second: 1 Edificios_9
+  - first:
+      213: -3610155996429861605
+    second: 1 Edificios_10
+  - first:
+      213: 7005763444197903938
+    second: 1 Edificios_11
+  - first:
+      213: -6856170846573180956
+    second: 1 Edificios_12
+  - first:
+      213: 3979548654642409909
+    second: 1 Edificios_13
+  - first:
+      213: -4611897273564468812
+    second: 1 Edificios_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1 Edificios_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 250
+        width: 442
+        height: 297
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e69b10efa361d40800000000000000
+      internalID: 5554692053033119261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_1
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 255
+        width: 247
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84552b70b7c40ff40800000000000000
+      internalID: 5760188014700680520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_2
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 176
+        width: 255
+        height: 339
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8ab80ed7e7fe46f0800000000000000
+      internalID: -698348316961228149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_3
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 265
+        width: 175
+        height: 227
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104eeff14c3ad24f0800000000000000
+      internalID: -851844691757439999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_4
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 266
+        width: 202
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfbed0249c97a580800000000000000
+      internalID: -8815905585533894729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_5
+      rect:
+        serializedVersion: 2
+        x: 1684
+        y: 268
+        width: 138
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f16dbf9c36391a8b0800000000000000
+      internalID: -5142667242680625633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_6
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 274
+        width: 172
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b074219a207aee0800000000000000
+      internalID: -1250027446392648847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_7
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 278
+        width: 221
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72a6e8cbde9dfdf80800000000000000
+      internalID: -8079499591385454041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_8
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 284
+        width: 160
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75de648803ccb98a0800000000000000
+      internalID: -6297215145130660521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_9
+      rect:
+        serializedVersion: 2
+        x: 2579
+        y: 277
+        width: 145
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1f684df96bdaf0b0800000000000000
+      internalID: -5693997530589139170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_10
+      rect:
+        serializedVersion: 2
+        x: 2760
+        y: 277
+        width: 178
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1d3d09af3626edc0800000000000000
+      internalID: -3610155996429861605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_11
+      rect:
+        serializedVersion: 2
+        x: 2972
+        y: 277
+        width: 173
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e45dffbb8793160800000000000000
+      internalID: 7005763444197903938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_12
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 276
+        width: 117
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7cd9ac0fcf9d0a0800000000000000
+      internalID: -6856170846573180956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_13
+      rect:
+        serializedVersion: 2
+        x: 3346
+        y: 276
+        width: 220
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b13856ba623a3730800000000000000
+      internalID: 3979548654642409909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1 Edificios_14
+      rect:
+        serializedVersion: 2
+        x: 3591
+        y: 276
+        width: 117
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b9e8945ddf3fffb0800000000000000
+      internalID: -4611897273564468812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1 Edificios_0: 5554692053033119261
+      1 Edificios_1: 5760188014700680520
+      1 Edificios_10: -3610155996429861605
+      1 Edificios_11: 7005763444197903938
+      1 Edificios_12: -6856170846573180956
+      1 Edificios_13: 3979548654642409909
+      1 Edificios_14: -4611897273564468812
+      1 Edificios_2: -698348316961228149
+      1 Edificios_3: -851844691757439999
+      1 Edificios_4: -8815905585533894729
+      1 Edificios_5: -5142667242680625633
+      1 Edificios_6: -1250027446392648847
+      1 Edificios_7: -8079499591385454041
+      1 Edificios_8: -6297215145130660521
+      1 Edificios_9: -5693997530589139170
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
