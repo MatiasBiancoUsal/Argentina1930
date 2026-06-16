@@ -13,9 +13,9 @@ public class PasarEscenaConTecla : MonoBehaviour
     void Update()
     {
         
-        if (Input.GetKeyDown("L"))
+        if (Input.GetKeyDown("l"))
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
 

@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 62356113d1481a942a0e892023920503
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9052964922348010807
+    second: 3 Edificios_0
+  - first:
+      213: 4958626923229902954
+    second: 3 Edificios_1
+  - first:
+      213: -5010659252332027050
+    second: 3 Edificios_2
+  - first:
+      213: -6793661482669811849
+    second: 3 Edificios_3
+  - first:
+      213: 9049385881918348442
+    second: 3 Edificios_4
+  - first:
+      213: 4683267862953756567
+    second: 3 Edificios_5
+  - first:
+      213: -3011753482341758263
+    second: 3 Edificios_6
+  - first:
+      213: -6189207302302612467
+    second: 3 Edificios_7
+  - first:
+      213: -5804443229232745573
+    second: 3 Edificios_8
+  - first:
+      213: -3267932441955900970
+    second: 3 Edificios_9
+  - first:
+      213: -653607653187928505
+    second: 3 Edificios_10
+  - first:
+      213: 2710107532737916030
+    second: 3 Edificios_11
+  - first:
+      213: 5464992925448913585
+    second: 3 Edificios_12
+  - first:
+      213: 241687448966624400
+    second: 3 Edificios_13
+  - first:
+      213: -4048280134307640871
+    second: 3 Edificios_14
+  - first:
+      213: -2149074696439554431
+    second: 3 Edificios_15
+  - first:
+      213: -1821427183068483449
+    second: 3 Edificios_16
+  - first:
+      213: -1746774933409308155
+    second: 3 Edificios_17
+  - first:
+      213: -2881700776739794323
+    second: 3 Edificios_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3 Edificios_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 274
+        width: 217
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73dff98d1a792ad70800000000000000
+      internalID: 9052964922348010807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_1
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 274
+        width: 143
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a687ecc2ae490d440800000000000000
+      internalID: 4958626923229902954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_2
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 274
+        width: 190
+        height: 253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 653a93625ff867ab0800000000000000
+      internalID: -5010659252332027050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_3
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 274
+        width: 117
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777563930e018b1a0800000000000000
+      internalID: -6793661482669811849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_4
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 274
+        width: 142
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9c9d2f8380e59d70800000000000000
+      internalID: 9049385881918348442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_5
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 274
+        width: 190
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7978c5fee4f4ef040800000000000000
+      internalID: 4683267862953756567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_6
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 274
+        width: 129
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca49fd2a2a1436d0800000000000000
+      internalID: -3011753482341758263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_7
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 267
+        width: 172
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04cff810c48b1aa0800000000000000
+      internalID: -6189207302302612467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_8
+      rect:
+        serializedVersion: 2
+        x: 1814
+        y: 267
+        width: 167
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9339a2e2a9727fa0800000000000000
+      internalID: -5804443229232745573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_9
+      rect:
+        serializedVersion: 2
+        x: 2061
+        y: 267
+        width: 188
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d16e3f12c8f5a2d0800000000000000
+      internalID: -3267932441955900970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_10
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 267
+        width: 129
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eb1496d4bede6f0800000000000000
+      internalID: -653607653187928505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_11
+      rect:
+        serializedVersion: 2
+        x: 2517
+        y: 267
+        width: 218
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c24f7317c3c9520800000000000000
+      internalID: 2710107532737916030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_12
+      rect:
+        serializedVersion: 2
+        x: 2803
+        y: 267
+        width: 168
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2c7656c1e87db40800000000000000
+      internalID: 5464992925448913585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_13
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 267
+        width: 187
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094735e4475aa5300800000000000000
+      internalID: 241687448966624400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_14
+      rect:
+        serializedVersion: 2
+        x: 3332
+        y: 265
+        width: 187
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d98253aaae91d7c0800000000000000
+      internalID: -4048280134307640871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_15
+      rect:
+        serializedVersion: 2
+        x: 3754
+        y: 265
+        width: 160
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e90fa23f3fc22e0800000000000000
+      internalID: -2149074696439554431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_16
+      rect:
+        serializedVersion: 2
+        x: 3984
+        y: 265
+        width: 270
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78076f890adf8b6e0800000000000000
+      internalID: -1821427183068483449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_17
+      rect:
+        serializedVersion: 2
+        x: 4309
+        y: 265
+        width: 331
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502e49fe37532c7e0800000000000000
+      internalID: -1746774933409308155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3 Edificios_18
+      rect:
+        serializedVersion: 2
+        x: 4694
+        y: 265
+        width: 180
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62157559642208d0800000000000000
+      internalID: -2881700776739794323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      3 Edificios_0: 9052964922348010807
+      3 Edificios_1: 4958626923229902954
+      3 Edificios_10: -653607653187928505
+      3 Edificios_11: 2710107532737916030
+      3 Edificios_12: 5464992925448913585
+      3 Edificios_13: 241687448966624400
+      3 Edificios_14: -4048280134307640871
+      3 Edificios_15: -2149074696439554431
+      3 Edificios_16: -1821427183068483449
+      3 Edificios_17: -1746774933409308155
+      3 Edificios_18: -2881700776739794323
+      3 Edificios_2: -5010659252332027050
+      3 Edificios_3: -6793661482669811849
+      3 Edificios_4: 9049385881918348442
+      3 Edificios_5: 4683267862953756567
+      3 Edificios_6: -3011753482341758263
+      3 Edificios_7: -6189207302302612467
+      3 Edificios_8: -5804443229232745573
+      3 Edificios_9: -3267932441955900970
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
