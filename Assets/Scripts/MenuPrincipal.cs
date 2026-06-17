@@ -10,7 +10,12 @@ public class MenuPrincipal : MonoBehaviour
 
     public void AtajosTeclado()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(8);
+    }
+
+    public void IrACreditos()
+    {
+        SceneManager.LoadScene(9);
     }
 
     public void SalirDelJuego()
