@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 965bee8f0cf87814db1f155fae5dffbf
+guid: d86d37ef6add6694ca818af6ecf1e640
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -493681049379318517
-    second: Edificios6_0
+      213: 5113743731054665821
+    second: MOVIMIENTO_0
+  - first:
+      213: -7760564582282756004
+    second: MOVIMIENTO_1
+  - first:
+      213: 7896509992919168493
+    second: MOVIMIENTO_2
+  - first:
+      213: -5792527045874347017
+    second: MOVIMIENTO_3
+  - first:
+      213: 7393519978176274573
+    second: MOVIMIENTO_4
+  - first:
+      213: 3923645780231409303
+    second: MOVIMIENTO_5
+  - first:
+      213: -5175511718398039421
+    second: MOVIMIENTO_6
+  - first:
+      213: 1501289857697474879
+    second: MOVIMIENTO_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +134,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Edificios6_0
+      name: MOVIMIENTO_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 0
         y: 0
-        width: 98
-        height: 167
+        width: 128
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b05576383b71629f0800000000000000
-      internalID: -493681049379318517
+      spriteID: d50e4e164daa7f640800000000000000
+      internalID: 5113743731054665821
       vertices: []
       indices: 
       edges: []
@@ -138,7 +159,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f12a7e6165aa5046830f1e5489aacef
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +167,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Edificios6_0: -493681049379318517
+      MOVIMIENTO_0: 5113743731054665821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

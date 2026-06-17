@@ -1,10 +1,37 @@
 fileFormatVersion: 2
-guid: 965bee8f0cf87814db1f155fae5dffbf
+guid: ada8ad8417fff0f47ae90f4ea5f3e57d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -493681049379318517
-    second: Edificios6_0
+      213: -2143786951712477837
+    second: TRABAJO BAR_0
+  - first:
+      213: 4249527742449884673
+    second: TRABAJO BAR_1
+  - first:
+      213: 7792878642554129428
+    second: TRABAJO BAR_2
+  - first:
+      213: 3827916240278249319
+    second: TRABAJO BAR_3
+  - first:
+      213: 5480481682188429159
+    second: TRABAJO BAR_4
+  - first:
+      213: -4189709484201101125
+    second: TRABAJO BAR_5
+  - first:
+      213: 2918212777931562410
+    second: TRABAJO BAR_6
+  - first:
+      213: 6545382931409418386
+    second: TRABAJO BAR_7
+  - first:
+      213: -1002718016125314599
+    second: TRABAJO BAR_8
+  - first:
+      213: 2578820319154522317
+    second: TRABAJO BAR_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +140,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Edificios6_0
+      name: TRABAJO BAR_0
       rect:
         serializedVersion: 2
-        x: 47
+        x: 0
         y: 0
-        width: 98
-        height: 167
+        width: 128
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b05576383b71629f0800000000000000
-      internalID: -493681049379318517
+      spriteID: 37d6f0d202dbf32e0800000000000000
+      internalID: -2143786951712477837
       vertices: []
       indices: 
       edges: []
@@ -138,7 +165,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ac209d9ed678c2e4eb6a9e63fc40d7bb
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +173,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Edificios6_0: -493681049379318517
+      TRABAJO BAR_0: -2143786951712477837
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
