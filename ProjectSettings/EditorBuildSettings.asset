@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: b56b6857c1990d448bc8fc85221f8ef9
   - enabled: 1
+    path: Assets/Scenes/Calle Ciudad.unity
+    guid: c264c4e3efb85f54dbb62a255b266f7b
+  - enabled: 1
+    path: Assets/Scenes/BAR.unity
+    guid: a6ce73fa93818c54f83f4c2b462de73a
+  - enabled: 1
     path: Assets/Scenes/KARABINjuancruz.unity
     guid: fab80be7fb88ae94b9fd6da1204191e4
   - enabled: 1
@@ -21,11 +27,8 @@ EditorBuildSettings:
     path: Assets/Scenes/CARUSOfelipe.unity
     guid: 08369185afd092c46923c436bc55c519
   - enabled: 1
-    path: Assets/Scenes/Calle Ciudad.unity
-    guid: c264c4e3efb85f54dbb62a255b266f7b
-  - enabled: 1
-    path: Assets/Scenes/BAR.unity
-    guid: a6ce73fa93818c54f83f4c2b462de73a
+    path: Assets/Scenes/Escenas Menu/Teclas.unity
+    guid: ab6dd674cbbd81048ad2e3a783cfcdf0
   - enabled: 0
     path: Assets/Scenes/siguientenivel.unity
     guid: 7d79f26f1fd72614cb777067de9ee481
