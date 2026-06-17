@@ -2,71 +2,50 @@ using UnityEngine;
 
 public class NPCPedido : MonoBehaviour
 {
-    [Header("Configuracion")]
-    public float tiempoEntrePreguntas = 15f;
+    [Header("Icono de alerta")]
+    public GameObject iconoAlerta;   // El "!" sobre el NPC
 
-    public enum EstadoPedido { Esperando, PidioYPendiente, PedidoEnBarra, PedidoListo, Entregado }
-    public EstadoPedido estado = EstadoPedido.Esperando;
+    public enum EstadoNPC { Esperando, PedidoActivo, Satisfecho }
+    public EstadoNPC estado = EstadoNPC.Esperando;
 
-    [Header("Alerta Visual (opcional)")]
-    public GameObject iconoAlerta;
+    private GameManager gameManager;
 
-    private float timer = 0f;
+    void Awake()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+    }
 
     void Start()
     {
-        // Icono empieza apagado
-        if (iconoAlerta != null)
-            iconoAlerta.SetActive(false);
-
-        SetEstado(EstadoPedido.PidioYPendiente);
-        Debug.Log("[NPC " + gameObject.name + "] Arrancó pidiendo.");
+        if (iconoAlerta != null) iconoAlerta.SetActive(false);
+        // Activar pedido al inicio (podés controlarlo desde afuera si preferís)
+        ActivarPedido();
     }
 
-    void Update()
+    public void ActivarPedido()
     {
-        if (estado == EstadoPedido.Entregado)
-        {
-            timer += Time.deltaTime;
-            if (timer >= tiempoEntrePreguntas)
-            {
-                timer = 0f;
-                SetEstado(EstadoPedido.PidioYPendiente);
-                Debug.Log("[NPC " + gameObject.name + "] Vuelve a pedir.");
-            }
-        }
+        if (estado != EstadoNPC.Esperando) return;
+        estado = EstadoNPC.PedidoActivo;
+        if (iconoAlerta != null) iconoAlerta.SetActive(true);
+
+        // Tutorial paso 1 — acercarse al cliente
+        gameManager?.TutorialNPCActivo();
     }
 
-    public void SetEstado(EstadoPedido nuevoEstado)
-    {
-        estado = nuevoEstado;
-        Debug.Log("[NPC " + gameObject.name + "] Estado → " + estado);
-
-        if (iconoAlerta != null)
-            iconoAlerta.SetActive(estado == EstadoPedido.PidioYPendiente);
-    }
-
+    // El jugador recoge el pedido del NPC
     public bool IntentarTomarPedido()
     {
-        if (estado == EstadoPedido.PidioYPendiente)
-        {
-            SetEstado(EstadoPedido.PedidoEnBarra);
-            Debug.Log("[NPC " + gameObject.name + "] Pedido tomado por el jugador.");
-            return true;
-        }
-        Debug.Log("[NPC " + gameObject.name + "] No se puede tomar el pedido. Estado actual: " + estado);
-        return false;
+        if (estado != EstadoNPC.PedidoActivo) return false;
+        if (iconoAlerta != null) iconoAlerta.SetActive(false);
+        return true;
     }
 
+    // El jugador entrega el pedido terminado
     public bool IntentarEntregarPedido()
     {
-        if (estado == EstadoPedido.PedidoListo)
-        {
-            SetEstado(EstadoPedido.Entregado);
-            Debug.Log("[NPC " + gameObject.name + "] Pedido entregado. +1 moneda!");
-            return true;
-        }
-        Debug.Log("[NPC " + gameObject.name + "] No se puede entregar. Estado actual: " + estado);
-        return false;
+        if (estado != EstadoNPC.PedidoActivo) return false;
+        estado = EstadoNPC.Satisfecho;
+        Debug.Log("[NPC] Pedido entregado. ¡Gracias!");
+        return true;
     }
 }

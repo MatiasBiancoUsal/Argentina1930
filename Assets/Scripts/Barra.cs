@@ -2,26 +2,28 @@ using UnityEngine;
 
 public class Barra : MonoBehaviour
 {
-    [Header("Configuracion")]
+    [Header("Preparacion")]
     public float tiempoPreparacion = 3f;
-
-    [Header("Prefab del pedido")]
-    public GameObject prefabPedido; // Arrastrar el prefab del sprite acá
+    public GameObject iconoPedidoListo;   // Icono que aparece cuando el pedido está listo
+    public GameObject prefabPedido;       // Sprite del pedido que sigue al jugador
 
     public enum EstadoBarra { Libre, Preparando, PedidoListo }
     public EstadoBarra estado = EstadoBarra.Libre;
 
-    private float timer = 0f;
     private NPCPedido npcActual = null;
-    private GameObject pedidoInstancia = null; // El objeto instanciado sobre la barra
+    private float timer = 0f;
+    private GameObject pedidoInstancia = null;
 
-    [Header("Indicador Visual (opcional)")]
-    public GameObject iconoPedidoListo;
+    private GameManager gameManager;
+
+    void Awake()
+    {
+        gameManager = FindFirstObjectByType<GameManager>();
+    }
 
     void Start()
     {
-        if (iconoPedidoListo != null)
-            iconoPedidoListo.SetActive(false);
+        if (iconoPedidoListo != null) iconoPedidoListo.SetActive(false);
     }
 
     void Update()
@@ -29,26 +31,19 @@ public class Barra : MonoBehaviour
         if (estado == EstadoBarra.Preparando)
         {
             timer += Time.deltaTime;
-            Debug.Log("[Barra] Preparando... " + timer.ToString("F1") + "s / " + tiempoPreparacion + "s");
             if (timer >= tiempoPreparacion)
             {
-                timer = 0f;
                 estado = EstadoBarra.PedidoListo;
+                if (iconoPedidoListo != null) iconoPedidoListo.SetActive(true);
 
-                // Instanciar el sprite del pedido sobre la barra
+                // Instanciar sprite del pedido en la barra
                 if (prefabPedido != null)
-                {
                     pedidoInstancia = Instantiate(prefabPedido, transform.position, Quaternion.identity);
-                    Debug.Log("[Barra] Sprite del pedido instanciado.");
-                }
 
-                if (npcActual != null)
-                    npcActual.SetEstado(NPCPedido.EstadoPedido.PedidoListo);
+                // Tutorial paso 3 — recoger de la barra
+                gameManager?.TutorialPedidoListo();
 
-                if (iconoPedidoListo != null)
-                    iconoPedidoListo.SetActive(true);
-
-                Debug.Log("[Barra] Pedido listo para recoger!");
+                Debug.Log("[Barra] Pedido listo.");
             }
         }
     }
@@ -60,14 +55,12 @@ public class Barra : MonoBehaviour
             estado = EstadoBarra.Preparando;
             npcActual = npc;
             timer = 0f;
-            Debug.Log("[Barra] Pedido recibido. Preparando en " + tiempoPreparacion + " segundos...");
+            Debug.Log("[Barra] Preparando pedido...");
             return true;
         }
-        Debug.Log("[Barra] Está ocupada. Estado actual: " + estado);
         return false;
     }
 
-    // Devuelve el NPC y además pasa la instancia del sprite al jugador
     public NPCPedido IntentarRecogerPedido(out GameObject instancia)
     {
         instancia = null;
@@ -79,13 +72,11 @@ public class Barra : MonoBehaviour
             estado = EstadoBarra.Libre;
             npcActual = null;
 
-            if (iconoPedidoListo != null)
-                iconoPedidoListo.SetActive(false);
+            if (iconoPedidoListo != null) iconoPedidoListo.SetActive(false);
 
-            Debug.Log("[Barra] Pedido recogido por el jugador.");
+            Debug.Log("[Barra] Pedido recogido.");
             return npc;
         }
-        Debug.Log("[Barra] No hay pedido listo. Estado actual: " + estado);
         return null;
     }
 }

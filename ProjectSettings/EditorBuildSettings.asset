@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: b56b6857c1990d448bc8fc85221f8ef9
   - enabled: 1
+    path: Assets/Scenes/TUTORIAL/Calle Ciudad TUTORIAL.unity
+    guid: bce6ca06c7fedf14493af09ddfd3176e
+  - enabled: 1
+    path: Assets/Scenes/TUTORIAL/BAR TUTORIAL.unity
+    guid: 9325943fe5af7984bb84dcf78945a9e8
+  - enabled: 1
     path: Assets/Scenes/Calle Ciudad.unity
     guid: c264c4e3efb85f54dbb62a255b266f7b
   - enabled: 1
