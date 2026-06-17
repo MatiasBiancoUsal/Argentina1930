@@ -5290,7 +5290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9af0725ac68cbf644bc80c3fa27bdb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraccion
-  offsetPedido: {x: 0.3, y: 0.5, z: 0}
+  offsetPedido: {x: 0, y: 0.5, z: 0}
 --- !u!114 &1108825676
 MonoBehaviour:
   m_ObjectHideFlags: 0
