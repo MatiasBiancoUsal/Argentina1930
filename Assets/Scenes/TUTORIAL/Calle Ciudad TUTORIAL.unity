@@ -2377,7 +2377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: 
+  escenaDestino: DEFIGUEIREDOjoaquin
 --- !u!61 &825184934
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12741,7 +12741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: 
+  escenaDestino: Dormitorio2
 --- !u!61 &2139539513
 BoxCollider2D:
   m_ObjectHideFlags: 0

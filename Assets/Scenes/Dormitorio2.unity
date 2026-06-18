@@ -613,6 +613,9 @@ Transform:
   - {fileID: 533406842}
   - {fileID: 1303275437}
   - {fileID: 1690316997}
+  - {fileID: 596374207}
+  - {fileID: 992899225}
+  - {fileID: 504682928}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &190833440
@@ -1945,12 +1948,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 504682926}
   serializedVersion: 2
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 38.147, y: 3.443, z: -1}
+  m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
+  m_LocalPosition: {x: -0.34968185, y: 1.9780501, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 186485287}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!1 &523266513
 GameObject:
@@ -2509,7 +2512,7 @@ SpriteRenderer:
   m_Size: {x: 0.46875, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &596374207
 Transform:
@@ -2519,12 +2522,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596374205}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.961, y: 2.802, z: -1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.4643173, y: 1.3370501, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 186485287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &597112200
 GameObject:
@@ -4024,12 +4027,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992899223}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.12, y: 1.293, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.6233177, y: -0.17194998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 186485287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993884428
 GameObject:
@@ -4283,9 +4286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faa684ec4a88b842b7adb00ab3a7cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedido
-  tiempoEntrePreguntas: 15
-  estado: 0
   iconoAlerta: {fileID: 1208575160}
+  estado: 0
 --- !u!212 &1011669064
 SpriteRenderer:
   serializedVersion: 2
@@ -4918,9 +4920,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Barra
   tiempoPreparacion: 3
+  iconoPedidoListo: {fileID: 0}
   prefabPedido: {fileID: 5858113647143973941, guid: 244100c6f520d304f878647a4cb0bd10, type: 3}
   estado: 0
-  iconoPedidoListo: {fileID: 0}
 --- !u!1 &1108825665
 GameObject:
   m_ObjectHideFlags: 0
@@ -9238,7 +9240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67926300e5b5e3749b17895ef6148889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  monedas: 0
   textoMonedas: {fileID: 432343862}
 --- !u!4 &1695787461
 Transform:
@@ -13240,6 +13241,3 @@ SceneRoots:
   - {fileID: 196806500}
   - {fileID: 798302906}
   - {fileID: 186485287}
-  - {fileID: 596374207}
-  - {fileID: 992899225}
-  - {fileID: 504682928}
