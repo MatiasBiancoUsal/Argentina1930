@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/siguientenivel.unity
     guid: 7d79f26f1fd72614cb777067de9ee481
+  - enabled: 1
+    path: Assets/Scenes/Dormitorio2.unity
+    guid: 11aa7781f7570044f958b61ec0815433
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
