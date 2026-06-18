@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ad6a46846c986df419f03f82ee0a6c09
+guid: 19cf084536457004da86faf61b1b2e69
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5189751823880382349
-    second: CAJON_0
+      213: -2213606668912200157
+    second: LAMPARA_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CAJON_0
+      name: LAMPARA_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 4
-        width: 15
-        height: 20
+        x: 12
+        y: 8
+        width: 8
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3789c21763c4af7b0800000000000000
-      internalID: -5189751823880382349
+      spriteID: 3267d0b7670b741e0800000000000000
+      internalID: -2213606668912200157
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      CAJON_0: -5189751823880382349
+      LAMPARA_0: -2213606668912200157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
