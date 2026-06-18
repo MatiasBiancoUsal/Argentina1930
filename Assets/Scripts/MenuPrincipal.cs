@@ -8,6 +8,16 @@ public class MenuPrincipal : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void AtajosTeclado()
+    {
+        SceneManager.LoadScene(8);
+    }
+
+    public void IrACreditos()
+    {
+        SceneManager.LoadScene(9);
+    }
+
     public void SalirDelJuego()
     {
         Application.Quit();

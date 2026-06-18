@@ -3,36 +3,47 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance; 
+    [Header("UI Monedas")]
+    public TextMeshProUGUI textoMonedas;
 
-    [Header("Monedas")]
-    public int monedas = 0;
-
-    [Header("UI")]
-    public TMP_Text textoMonedas; 
-
-    void Awake()
-    {
-        
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-    }
+    private int monedas = 0;
 
     void Start()
     {
         ActualizarUI();
     }
 
-    public void AgregarMoneda(int cantidad = 1)
+    public void AgregarMoneda()
     {
-        monedas += cantidad;
+        monedas++;
         ActualizarUI();
-        Debug.Log("Monedas: " + monedas);
     }
 
     void ActualizarUI()
     {
         if (textoMonedas != null)
             textoMonedas.text = "Monedas: " + monedas;
+    }
+
+    // --- Tutorial: disparadores ---
+
+    public void TutorialNPCActivo()
+    {
+        TutorialManager.Instancia?.MostrarPaso(TutorialManager.PasoTutorial.AcercarseAlCliente);
+    }
+
+    public void TutorialPedidoRecibido()
+    {
+        TutorialManager.Instancia?.MostrarPaso(TutorialManager.PasoTutorial.DejarEnBarra);
+    }
+
+    public void TutorialPedidoListo()
+    {
+        TutorialManager.Instancia?.MostrarPaso(TutorialManager.PasoTutorial.RecogerDeBarra);
+    }
+
+    public void TutorialPedidoRecogido()
+    {
+        TutorialManager.Instancia?.MostrarPaso(TutorialManager.PasoTutorial.EntregarAlCliente);
     }
 }

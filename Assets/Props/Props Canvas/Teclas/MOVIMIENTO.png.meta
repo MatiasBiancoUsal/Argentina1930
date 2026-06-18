@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: 79da0fa4d62970d499a5b3380c0e35da
+guid: d86d37ef6add6694ca818af6ecf1e640
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6051113521464526095
-    second: Edificio.temp_0
+      213: 5113743731054665821
+    second: MOVIMIENTO_0
+  - first:
+      213: -7760564582282756004
+    second: MOVIMIENTO_1
+  - first:
+      213: 7896509992919168493
+    second: MOVIMIENTO_2
+  - first:
+      213: -5792527045874347017
+    second: MOVIMIENTO_3
+  - first:
+      213: 7393519978176274573
+    second: MOVIMIENTO_4
+  - first:
+      213: 3923645780231409303
+    second: MOVIMIENTO_5
+  - first:
+      213: -5175511718398039421
+    second: MOVIMIENTO_6
+  - first:
+      213: 1501289857697474879
+    second: MOVIMIENTO_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +96,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,27 +117,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Edificio.temp_0
+      name: MOVIMIENTO_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 9
-        width: 252
-        height: 328
+        x: 0
+        y: 0
+        width: 128
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f05c47600bfd9f350800000000000000
-      internalID: 6051113521464526095
+      spriteID: d50e4e164daa7f640800000000000000
+      internalID: 5113743731054665821
       vertices: []
       indices: 
       edges: []
@@ -125,7 +159,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5f12a7e6165aa5046830f1e5489aacef
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +167,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceOnImport
+        value: False
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Edificio.temp_0: 6051113521464526095
+      MOVIMIENTO_0: 5113743731054665821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
