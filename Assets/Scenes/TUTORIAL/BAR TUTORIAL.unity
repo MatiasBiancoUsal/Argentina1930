@@ -4551,7 +4551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Calle Ciudad TUTORIAL
+  escenaDestino: 'Calle Ciudad '
 --- !u!61 &1077954247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5054,6 +5054,7 @@ MonoBehaviour:
   enSigilo: 0
   estaAgachado: 0
   velocidadAgachado: 1.5
+  panelDialogo: {fileID: 0}
   clipPasos: {fileID: 8300000, guid: 7709088ac0e2632458fc1d52b7926613, type: 3}
 --- !u!50 &1108825670
 Rigidbody2D:
