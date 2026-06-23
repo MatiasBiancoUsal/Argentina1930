@@ -6,6 +6,11 @@ public class NPCDialogos : MonoBehaviour
 
     public string nombreNPC;
 
+    public Sprite retratoNPC;
+
+    public GameObject indicador;
+    private bool yaHablo = false;
+
     [TextArea(2,5)]
     public string[] lineasDialogo;
 
@@ -17,7 +22,13 @@ public class NPCDialogos : MonoBehaviour
             Input.GetKeyDown(KeyCode.E) &&
             !panelDialogo.dialogoActivo)
         {
-            panelDialogo.IniciarDialogo(nombreNPC, lineasDialogo);
+            panelDialogo.IniciarDialogo(nombreNPC, retratoNPC, lineasDialogo);
+            yaHablo = true;
+
+            if (indicador != null)
+            {
+            indicador.SetActive(false);
+            }
         }
     }
 
