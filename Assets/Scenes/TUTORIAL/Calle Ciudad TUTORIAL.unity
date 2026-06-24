@@ -3214,7 +3214,7 @@ Transform:
   m_GameObject: {fileID: 1108825665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.47, y: 3.27, z: 0}
+  m_LocalPosition: {x: 14.99, y: 3.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3240,6 +3240,7 @@ MonoBehaviour:
   estaAgachado: 0
   velocidadAgachado: 1.5
   panelDialogo: {fileID: 0}
+  panelObjeto: {fileID: 0}
   clipPasos: {fileID: 8300000, guid: 7709088ac0e2632458fc1d52b7926613, type: 3}
 --- !u!50 &1108825670
 Rigidbody2D:
@@ -4855,7 +4856,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 9.59651, y: -0.21922398}
+  m_Offset: {x: 19.205078, y: -0.21922398}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4865,7 +4866,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 24.998531, y: 21.421015}
+  m_Size: {x: 44.215668, y: 21.421015}
   m_EdgeRadius: 0
 --- !u!1 &1695787459
 GameObject:
