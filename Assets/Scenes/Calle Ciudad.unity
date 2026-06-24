@@ -2077,7 +2077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 0}
+  libreta: {fileID: 342791981}
   pista: Segunda pista
 --- !u!4 &845503313
 Transform:
@@ -3660,7 +3660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 373f0ab934def294295f9d72a8cf3c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CamaraFotografica
-  visor: {fileID: 0}
+  visor: {fileID: 637960983}
   gestorFotos: {fileID: 1108825677}
   cooldownFoto: 0.5
 --- !u!114 &1108825677
@@ -21293,7 +21293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 0}
+  libreta: {fileID: 342791981}
   pista: '"Se encontraron huellas junto a la ventana."'
 --- !u!4 &2125018147
 Transform:
