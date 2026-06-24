@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
 
     private bool enZonaPasoBajo = false;
     public PanelDialogo panelDialogo;
+    public PanelDialogo panelObjeto;
 
 
     // Audio
@@ -71,13 +72,14 @@ public class Player : MonoBehaviour
     {
 
 // Bloquear el movimiento cuando este el dialogo activado
-    if (panelDialogo != null && panelDialogo.dialogoActivo)
-    {
-       movimiento = Vector2.zero;
-       rb.linearVelocity = Vector2.zero;
-       animator.SetBool("Caminando", false);
-       return;
-    }
+   if ((panelDialogo != null && panelDialogo.dialogoActivo) ||
+    (panelObjeto != null && panelObjeto.dialogoActivo))
+{
+    movimiento = Vector2.zero;
+    rb.linearVelocity = Vector2.zero;
+    animator.SetBool("Caminando", false);
+    return;
+}
 
         // Animacion eje Horizontal Y Vertical
         movimiento.x = Input.GetAxisRaw("Horizontal");
@@ -214,9 +216,11 @@ public class Player : MonoBehaviour
 
   void FixedUpdate()
 {
-    if (panelDialogo != null && panelDialogo.dialogoActivo)
-        return;
-
+  if ((panelDialogo != null && panelDialogo.dialogoActivo) ||
+    (panelObjeto != null && panelObjeto.dialogoActivo))
+{
+    return;
+}
     rb.MovePosition(rb.position + movimiento * velocidadActual * Time.fixedDeltaTime);
 }
 }

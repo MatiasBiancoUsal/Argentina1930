@@ -5,6 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instancia { get; private set; }
 
+    private bool sonidoMuteado = false;
+
     [Header("UI Monedas")]
     public TextMeshProUGUI textoMonedas;
 
@@ -82,5 +84,15 @@ public class GameManager : MonoBehaviour
     public void TutorialPedidoRecogido()
     {
         TutorialManager.Instancia?.MostrarPaso(TutorialManager.PasoTutorial.EntregarAlCliente);
+    }
+
+     void Update()
+    {
+    if (Input.GetKeyDown(KeyCode.M))
+    {
+    sonidoMuteado = !sonidoMuteado;
+
+    AudioListener.volume = sonidoMuteado ? 0f : 1f;
+    }
     }
 }
