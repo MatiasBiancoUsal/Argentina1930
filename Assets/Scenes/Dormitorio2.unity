@@ -4763,6 +4763,7 @@ MonoBehaviour:
   estaAgachado: 0
   velocidadAgachado: 1.5
   panelDialogo: {fileID: 0}
+  panelObjeto: {fileID: 0}
   clipPasos: {fileID: 0}
 --- !u!50 &1108825670
 Rigidbody2D:
@@ -12621,7 +12622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: 'Calle Ciudad '
+  escenaDestino: Calle Ciudad
 --- !u!4 &2123461114
 Transform:
   m_ObjectHideFlags: 0
