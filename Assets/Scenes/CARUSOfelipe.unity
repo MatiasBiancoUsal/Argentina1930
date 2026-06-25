@@ -2410,7 +2410,7 @@ SpriteRenderer:
   m_Size: {x: 0.40625, y: 0.625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!1 &693159875
 GameObject:
@@ -3919,9 +3919,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2faa684ec4a88b842b7adb00ab3a7cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCPedido
-  tiempoEntrePreguntas: 15
-  estado: 0
   iconoAlerta: {fileID: 114352823}
+  estado: 0
 --- !u!212 &1011669064
 SpriteRenderer:
   serializedVersion: 2
@@ -4851,9 +4850,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Barra
   tiempoPreparacion: 3
+  iconoPedidoListo: {fileID: 78765713}
   prefabPedido: {fileID: 1603833155320401514, guid: a5aab011346717d4bb8ae9e619cc9667, type: 3}
   estado: 0
-  iconoPedidoListo: {fileID: 78765713}
 --- !u!1 &1108825665
 GameObject:
   m_ObjectHideFlags: 0
@@ -4972,6 +4971,7 @@ MonoBehaviour:
   enSigilo: 0
   estaAgachado: 0
   velocidadAgachado: 1.5
+  panelDialogo: {fileID: 0}
   clipPasos: {fileID: 8300000, guid: 7709088ac0e2632458fc1d52b7926613, type: 3}
 --- !u!50 &1108825670
 Rigidbody2D:
@@ -7929,7 +7929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67926300e5b5e3749b17895ef6148889, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  monedas: 0
   textoMonedas: {fileID: 432343862}
 --- !u!4 &1695787461
 Transform:
@@ -8457,6 +8456,51 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 1.375}
   m_EdgeRadius: 0
+--- !u!1 &1845243251
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845243253}
+  - component: {fileID: 1845243252}
+  m_Layer: 0
+  m_Name: Conectar UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1845243252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845243251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9929effc051ec48ae57e0902c0a471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  textoMonedas: {fileID: 0}
+--- !u!4 &1845243253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845243251}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.2502, y: 1.7545, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1867013325
 GameObject:
   m_ObjectHideFlags: 0
@@ -11888,6 +11932,7 @@ SceneRoots:
   - {fileID: 1703838006}
   - {fileID: 1150641164}
   - {fileID: 1695787461}
+  - {fileID: 1845243253}
   - {fileID: 1108825667}
   - {fileID: 205597697}
   - {fileID: 837125409}
