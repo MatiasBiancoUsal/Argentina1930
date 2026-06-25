@@ -9,7 +9,7 @@ public class IrADormir : MonoBehaviour
     {
         if (playerNear &&
             LevelManager.Instance.IrADormir &&
-            Input.GetKeyDown(KeyCode.J))
+            Input.GetKeyDown(KeyCode.E))
         {
             LoadNextLevel();
         }
@@ -18,7 +18,7 @@ public class IrADormir : MonoBehaviour
     private void LoadNextLevel()
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentScene + 1);
+        SceneManager.LoadScene(13);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
