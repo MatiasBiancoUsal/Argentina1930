@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
     void ActualizarUI()
     {
         if (textoMonedas != null)
-            textoMonedas.text = "Monedas: " + monedas;
+            textoMonedas.text = "" + monedas;
     }
 
     // --- Tutorial: disparadores ---
