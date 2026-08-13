@@ -7,6 +7,21 @@ public class SceneTransition : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
+    private static SceneTransition instance;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     public void LoadNextScene()
     {
         Debug.Log("Iniciando transición");
@@ -15,14 +30,14 @@ public class SceneTransition : MonoBehaviour
 
     IEnumerator LoadLevel()
     {
-        // Ejecuta la animación
+        // Hace la transición hacia negro
         Debug.Log("Activando animación");
         transition.SetTrigger("Start");
 
-        // Espera a que termine
+        // Espera a que llegue completamente a negro
         yield return new WaitForSeconds(transitionTime);
 
-        // Carga la siguiente escena
+        // Cambia de escena mientras la pantalla sigue negra
         SceneManager.LoadScene(
             SceneManager.GetActiveScene().buildIndex + 1
         );

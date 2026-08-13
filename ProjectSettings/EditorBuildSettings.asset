@@ -14,18 +14,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TUTORIAL/Calle Ciudad TUTORIAL.unity
     guid: bce6ca06c7fedf14493af09ddfd3176e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TUTORIAL/BAR TUTORIAL.unity
-    guid: 9325943fe5af7984bb84dcf78945a9e8
+    guid: 574d25a57ee9f294f9153285b19ca29b
   - enabled: 1
     path: Assets/Scenes/Calle Ciudad.unity
-    guid: c264c4e3efb85f54dbb62a255b266f7b
+    guid: 4d71b0299ccde124187114122903f517
   - enabled: 1
     path: Assets/Scenes/BAR.unity
-    guid: a6ce73fa93818c54f83f4c2b462de73a
+    guid: 7aabf369821a158449fe5dcd974b7fcb
   - enabled: 1
     path: Assets/Scenes/KARABINjuancruz.unity
     guid: fab80be7fb88ae94b9fd6da1204191e4
+  - enabled: 1
+    path: "Assets/Scenes/DIAS-TRASNICIONES/D\xCDA1.unity"
+    guid: 4ec6c6232f16667418af512cea3ce4c5
   - enabled: 1
     path: Assets/Scenes/DEFIGUEIREDOjoaquin.unity
     guid: 86a7969d673a4d945aaf7ce772ea481a
