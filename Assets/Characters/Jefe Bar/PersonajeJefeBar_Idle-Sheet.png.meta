@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 4c585eade54062241a7fbf82bbb81306
+guid: 9dbf0ff10fee963469c4017f29e61669
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8789259185193317650
-    second: PersonajeJefeBar_Esp_0
+      213: -415176019463996570
+    second: PersonajeJefeBar_Idle-Sheet_0
+  - first:
+      213: 5644721379460173098
+    second: PersonajeJefeBar_Idle-Sheet_1
+  - first:
+      213: 3092433831948532265
+    second: PersonajeJefeBar_Idle-Sheet_2
+  - first:
+      213: -3578220415260472687
+    second: PersonajeJefeBar_Idle-Sheet_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PersonajeJefeBar_Esp_0
+      name: PersonajeJefeBar_Idle-Sheet_0
       rect:
         serializedVersion: 2
         x: 8
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eea86bba657460680800000000000000
-      internalID: -8789259185193317650
+      spriteID: 66b76982c9ffc3af0800000000000000
+      internalID: -415176019463996570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PersonajeJefeBar_Idle-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 4
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2dc6c60034165e40800000000000000
+      internalID: 5644721379460173098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PersonajeJefeBar_Idle-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 4
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a31bc8f288aea20800000000000000
+      internalID: 3092433831948532265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PersonajeJefeBar_Idle-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 4
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19a49549d7b975ec0800000000000000
+      internalID: -3578220415260472687
       vertices: []
       indices: 
       edges: []
@@ -138,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: eefb1ce4dd72828479e209d63e82f418
+    spriteID: 0a5b5c48f283eaf4b9a93acac6090b90
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      PersonajeJefeBar_Esp_0: -8789259185193317650
+      PersonajeJefeBar_Idle-Sheet_0: -415176019463996570
+      PersonajeJefeBar_Idle-Sheet_1: 5644721379460173098
+      PersonajeJefeBar_Idle-Sheet_2: 3092433831948532265
+      PersonajeJefeBar_Idle-Sheet_3: -3578220415260472687
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
