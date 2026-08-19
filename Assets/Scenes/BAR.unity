@@ -2253,6 +2253,65 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.40361977, y: 0.39869654}
   m_EdgeRadius: 0
+--- !u!1 &547904569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 547904572}
+  - component: {fileID: 547904571}
+  - component: {fileID: 547904570}
+  m_Layer: 0
+  m_Name: Conectar UI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &547904570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547904569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958afab9d1e0c914c8f971fe17f71a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivadorCamara
+  botonCamara: {fileID: 605572665}
+--- !u!114 &547904571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547904569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b9929effc051ec48ae57e0902c0a471, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ConectarUI
+  textoMonedas: {fileID: 0}
+--- !u!4 &547904572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547904569}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.31733, y: 3.27614, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &551278387
 GameObject:
   m_ObjectHideFlags: 0
@@ -13842,3 +13901,4 @@ SceneRoots:
   - {fileID: 1077954248}
   - {fileID: 982536448}
   - {fileID: 285098898}
+  - {fileID: 547904572}

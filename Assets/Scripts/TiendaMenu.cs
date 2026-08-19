@@ -31,4 +31,22 @@ public class TiendaMenu : MonoBehaviour
             Debug.Log("No tenés suficientes monedas");
         }
     }
+
+
+    public void ComprarCamara()
+    {
+        int precio = 1;
+        if (GameManager.Instancia.GastarMonedas(precio))
+        {
+            InventarioJugador.Instancia.AgregarItem("Camara");
+            ActualizarMonedas();
+            Debug.Log("Cámara comprada");
+        }
+        else
+        {
+            Debug.Log("No tenés suficientes monedas");
+        }
+    }
+
+
 }

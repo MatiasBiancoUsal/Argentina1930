@@ -28,6 +28,13 @@ public class InventarioJugador : MonoBehaviour
         if (item == "Ticket" && slotTicket != null)
             slotTicket.SetActive(true);
 
+        if (item == "Camara")
+        {
+            ActivadorCamara activador = FindObjectOfType<ActivadorCamara>();
+            if (activador != null)
+                activador.ActivarBoton();
+        }
+
         Debug.Log("Inventario: " + string.Join(", ", items));
     }
 
@@ -40,4 +47,11 @@ public class InventarioJugador : MonoBehaviour
     {
         return items;
     }
+
+
+
+
+    
+
+
 }

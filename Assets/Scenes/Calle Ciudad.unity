@@ -1583,6 +1583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 434472786}
   - component: {fileID: 434472785}
+  - component: {fileID: 434472787}
   m_Layer: 0
   m_Name: Conectar UI
   m_TagString: Untagged
@@ -1618,6 +1619,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434472787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434472784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 958afab9d1e0c914c8f971fe17f71a37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ActivadorCamara
+  botonCamara: {fileID: 1902570504}
 --- !u!1001 &503280302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7229,7 +7243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1902570505
 RectTransform:
   m_ObjectHideFlags: 0
