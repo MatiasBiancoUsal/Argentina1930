@@ -898,7 +898,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1695787462}
+      - m_Target: {fileID: 239222590}
         m_TargetAssemblyTypeName: PausaJuego, Assembly-CSharp
         m_MethodName: IrAlMenu
         m_Mode: 1
@@ -1213,6 +1213,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 223242722}
   m_CullTransparentMesh: 1
+--- !u!1 &239222588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 239222589}
+  - component: {fileID: 239222590}
+  m_Layer: 0
+  m_Name: PausaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &239222589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239222588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 594.4456, y: 366.60486, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &239222590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239222588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56759b5b12e17844db296d29d89893bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PausaJuego
+  panelPausa: {fileID: 818111723}
 --- !u!1 &248049020
 GameObject:
   m_ObjectHideFlags: 0
@@ -3445,7 +3490,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &818111724
 Transform:
   m_ObjectHideFlags: 0
@@ -8932,7 +8977,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1695787461}
   - component: {fileID: 1695787460}
-  - component: {fileID: 1695787462}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8968,19 +9012,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1695787462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1695787459}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 56759b5b12e17844db296d29d89893bd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PausaJuego
-  panelPausa: {fileID: 818111723}
 --- !u!1 &1695851017
 GameObject:
   m_ObjectHideFlags: 0
@@ -9409,7 +9440,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1695787462}
+      - m_Target: {fileID: 239222590}
         m_TargetAssemblyTypeName: PausaJuego, Assembly-CSharp
         m_MethodName: AlternarPausa
         m_Mode: 1
@@ -13902,3 +13933,4 @@ SceneRoots:
   - {fileID: 982536448}
   - {fileID: 285098898}
   - {fileID: 547904572}
+  - {fileID: 239222589}

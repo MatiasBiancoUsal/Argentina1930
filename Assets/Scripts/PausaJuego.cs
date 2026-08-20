@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PausaJuego : MonoBehaviour
 {
@@ -6,10 +7,14 @@ public class PausaJuego : MonoBehaviour
 
     private bool pausado = false;
 
-    void Start()
+    void Awake()
     {
-        panelPausa.SetActive(false);
+        // Cada escena comienza siempre sin estar pausada
         Time.timeScale = 1f;
+        pausado = false;
+
+        if (panelPausa != null)
+            panelPausa.SetActive(false);
     }
 
     void Update()
@@ -35,10 +40,10 @@ public class PausaJuego : MonoBehaviour
             Time.timeScale = 1f;
         }
     }
-   
+
     public void IrAlMenu()
-{
-    Time.timeScale = 1f;
-    UnityEngine.SceneManagement.SceneManager.LoadScene("MenuPrincipal");
-}
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MenuPrincipal");
+    }
 }
