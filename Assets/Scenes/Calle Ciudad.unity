@@ -7192,7 +7192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: DEFIGUEIREDOjoaquin
+  escenaDestino: Dormitorio-Lorenzo
 --- !u!61 &1895697758
 BoxCollider2D:
   m_ObjectHideFlags: 0
