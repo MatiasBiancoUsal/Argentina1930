@@ -94,6 +94,7 @@ public class Player : MonoBehaviour
         {
             animator.SetFloat("UltimoX", movimiento.x);
             animator.SetFloat("UltimoY", movimiento.y);
+            
         }
 
         // Input de movimiento (WASD o flechas)

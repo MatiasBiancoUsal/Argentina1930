@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PlayerInteraccion : MonoBehaviour
+public class PlayerInteraccionJoaco : MonoBehaviour
 {
     private NPCPedido npcEnRango = null;
     private Barra barraEnRango = null;
@@ -9,13 +9,13 @@ public class PlayerInteraccion : MonoBehaviour
 
     [Header("Posicion del pedido sobre el personaje")]
     public Vector3 offsetPedido = new Vector3(0.3f, 0.5f, 0f);
-    
+    public bool Estrella = true;
 
     private GameManager gameManager;
 
     private Animator animator;
     [SerializeField] public GameObject estrella;
-
+    [SerializeField] private Interactuar animacionInteraccion;
     void Awake()
     {
         gameManager = FindFirstObjectByType<GameManager>();
@@ -24,7 +24,10 @@ public class PlayerInteraccion : MonoBehaviour
 
     }
 
-    
+    private void Start()
+    {
+        estrella.SetActive(false);
+    }
 
     void Update()
     {
@@ -41,7 +44,12 @@ public class PlayerInteraccion : MonoBehaviour
         if (pedidoEnMano != null && barraEnRango != null)
         {
             if (barraEnRango.IntentarDejarPedido(pedidoEnMano))
+            {
                 pedidoEnMano = null;
+
+                animacionInteraccion.ActivarAnimacion();
+            }
+
             return;
         }
 
@@ -55,9 +63,13 @@ public class PlayerInteraccion : MonoBehaviour
                     Destroy(spritePedido);
                     spritePedido = null;
                 }
+
                 pedidoEnMano = null;
                 gameManager.AgregarMoneda();
+
+                animacionInteraccion.ActivarAnimacion();
             }
+
             return;
         }
 
