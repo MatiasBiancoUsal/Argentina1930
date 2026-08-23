@@ -119,6 +119,57 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &31535462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 31535464}
+  - component: {fileID: 31535463}
+  m_Layer: 0
+  m_Name: LibretaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &31535463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31535462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c34ab3adbcf01b4daf63a0324bebf0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LibretaPistas
+  panelLibreta: {fileID: 1044965815}
+  textoPistas: {fileID: 342791982}
+  iconoNuevaPista: {fileID: 1133389427}
+  panelFotografias: {fileID: 214428642}
+  gridFotos: {fileID: 1250379799}
+  prefabMiniatura: {fileID: 7985918138676106576, guid: 28580e6935434564e92952ac8d6217c5, type: 3}
+  textoContadorFotos: {fileID: 0}
+--- !u!4 &31535464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31535462}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19098, y: 3.39702, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54946194
 GameObject:
   m_ObjectHideFlags: 0
@@ -996,7 +1047,6 @@ GameObject:
   - component: {fileID: 342791984}
   - component: {fileID: 342791983}
   - component: {fileID: 342791982}
-  - component: {fileID: 342791981}
   m_Layer: 5
   m_Name: PISTAS
   m_TagString: Untagged
@@ -1004,25 +1054,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &342791981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342791980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c34ab3adbcf01b4daf63a0324bebf0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LibretaPistas
-  panelLibreta: {fileID: 1044965815}
-  textoPistas: {fileID: 342791982}
-  iconoNuevaPista: {fileID: 1133389427}
-  panelFotografias: {fileID: 214428642}
-  gridFotos: {fileID: 1250379799}
-  prefabMiniatura: {fileID: 7985918138676106576, guid: 28580e6935434564e92952ac8d6217c5, type: 3}
-  textoContadorFotos: {fileID: 0}
 --- !u!114 &342791982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1931,8 +1962,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342791981}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 1665251641}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: AbrirCerrarLibreta
         m_Mode: 1
         m_Arguments:
@@ -2433,8 +2464,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342791981}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 1665251641}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: AbrirCerrarLibreta
         m_Mode: 1
         m_Arguments:
@@ -2680,7 +2711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 342791981}
+  libreta: {fileID: 31535463}
   pista: Segunda pista
 --- !u!4 &845503313
 Transform:
@@ -3721,6 +3752,7 @@ MonoBehaviour:
   panelDialogo: {fileID: 239540801}
   nombreNPC: Banco
   retratoNPC: {fileID: 434684701918818832, guid: 9f63f40fd514b604f888b410317c93da, type: 3}
+  pistaPorDialogo: {fileID: 0}
   indicador: {fileID: 923018845}
   lineasDialogo:
   - Es un banco, nada raro.
@@ -4386,6 +4418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraccion
   offsetPedido: {x: 0.3, y: 0.5, z: 0}
+  estrella: {fileID: 0}
 --- !u!114 &1108825676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4413,7 +4446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876699495cfeebb47841fc5500dbbdb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GestorFotos
-  libretaPistas: {fileID: 342791981}
+  libretaPistas: {fileID: 0}
 --- !u!82 &1108825678
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5771,8 +5804,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342791981}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 1665251641}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: MostrarPestanaFotos
         m_Mode: 1
         m_Arguments:
@@ -6312,6 +6345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1665251640}
   - component: {fileID: 1665251639}
+  - component: {fileID: 1665251641}
   - component: {fileID: 1665251638}
   - component: {fileID: 1665251637}
   m_Layer: 5
@@ -6409,6 +6443,25 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1665251641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1665251636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79eabcc9a8a4014d8272c5f5f826437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LibretaPistasUI
+  panelLibreta: {fileID: 1044965815}
+  textoPistas: {fileID: 342791982}
+  iconoNuevaPista: {fileID: 1133389427}
+  panelFotografias: {fileID: 214428642}
+  gridFotos: {fileID: 1250379799}
+  prefabMiniatura: {fileID: 7985918138676106576, guid: 28580e6935434564e92952ac8d6217c5, type: 3}
+  textoContadorFotos: {fileID: 0}
 --- !u!1 &1691990607
 GameObject:
   m_ObjectHideFlags: 0
@@ -21535,6 +21588,7 @@ MonoBehaviour:
   panelDialogo: {fileID: 1786110126}
   nombreNPC: Donatto
   retratoNPC: {fileID: -1597188336547182666, guid: d5d57bd5d591e1143b296d55ed8bca0e, type: 3}
+  pistaPorDialogo: {fileID: 0}
   indicador: {fileID: 1778930501}
   lineasDialogo:
   - Linea1
@@ -22518,7 +22572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 342791981}
+  libreta: {fileID: 31535463}
   pista: '"Se encontraron huellas junto a la ventana."'
 --- !u!4 &2125018147
 Transform:
@@ -22564,3 +22618,4 @@ SceneRoots:
   - {fileID: 1744974774}
   - {fileID: 318106714}
   - {fileID: 588686996}
+  - {fileID: 31535464}

@@ -8,6 +8,8 @@ public class NPCDialogos : MonoBehaviour
 
     public Sprite retratoNPC;
 
+    public PistaPorDialogo pistaPorDialogo;
+
     public GameObject indicador;
     private bool yaHablo = false;
 
@@ -24,6 +26,11 @@ public class NPCDialogos : MonoBehaviour
         {
             panelDialogo.IniciarDialogo(nombreNPC, retratoNPC, lineasDialogo);
             yaHablo = true;
+
+            if (pistaPorDialogo != null)
+{
+    pistaPorDialogo.ActivarPista();
+}
 
             if (indicador != null)
             {
