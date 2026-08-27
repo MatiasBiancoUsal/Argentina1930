@@ -65,6 +65,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Esc.Int.Colon/Colon 2.unity
     guid: 4911e327e896eb44eb87c5a93aaecd28
+  - enabled: 1
+    path: Assets/Scenes/Prueba Enemigos en Calle Ciudad.unity
+    guid: 4df6d7adb720e2c4185c80d57bffcb1c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
