@@ -1304,7 +1304,6 @@ GameObject:
   - component: {fileID: 342163888}
   - component: {fileID: 342163890}
   - component: {fileID: 342163889}
-  - component: {fileID: 342163887}
   m_Layer: 5
   m_Name: PISTAS
   m_TagString: Untagged
@@ -1312,25 +1311,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &342163887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 342163886}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c34ab3adbcf01b4daf63a0324bebf0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LibretaPistas
-  panelLibreta: {fileID: 700218889}
-  textoPistas: {fileID: 342163889}
-  iconoNuevaPista: {fileID: 251379886}
-  panelFotografias: {fileID: 1478576922}
-  gridFotos: {fileID: 445967887}
-  prefabMiniatura: {fileID: 7985918138676106576, guid: 28580e6935434564e92952ac8d6217c5, type: 3}
-  textoContadorFotos: {fileID: 0}
 --- !u!224 &342163888
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1674,6 +1654,7 @@ GameObject:
   - component: {fileID: 383821688}
   - component: {fileID: 383821687}
   - component: {fileID: 383821686}
+  - component: {fileID: 383821689}
   m_Layer: 5
   m_Name: Canvas Pistas
   m_TagString: Untagged
@@ -1697,6 +1678,7 @@ RectTransform:
   - {fileID: 700218890}
   - {fileID: 745636077}
   - {fileID: 1870129014}
+  - {fileID: 856115665}
   - {fileID: 186466962}
   - {fileID: 1008585533}
   m_Father: {fileID: 0}
@@ -1769,6 +1751,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 22
   m_TargetDisplay: 0
+--- !u!114 &383821689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383821684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c79eabcc9a8a4014d8272c5f5f826437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LibretaPistasUI
+  panelLibreta: {fileID: 700218889}
+  textoPistas: {fileID: 342163889}
+  iconoNuevaPista: {fileID: 251379886}
+  panelFotografias: {fileID: 1478576922}
+  gridFotos: {fileID: 445967887}
+  prefabMiniatura: {fileID: 7985918138676106576, guid: 28580e6935434564e92952ac8d6217c5, type: 3}
+  textoContadorFotos: {fileID: 0}
 --- !u!1 &406114162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2373,8 +2374,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342163887}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 383821689}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: AbrirCerrarLibreta
         m_Mode: 1
         m_Arguments:
@@ -4124,8 +4125,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342163887}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 383821689}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: AbrirCerrarLibreta
         m_Mode: 1
         m_Arguments:
@@ -4545,52 +4546,6 @@ Transform:
   - {fileID: 600897422}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &845503311
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 845503313}
-  - component: {fileID: 845503312}
-  m_Layer: 0
-  m_Name: PruebaPistas (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &845503312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845503311}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 342163887}
-  pista: Segunda pista
---- !u!4 &845503313
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 845503311}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.9396, y: 238.83482, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &851384783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,6 +4729,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &856115662
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 856115665}
+  - component: {fileID: 856115664}
+  - component: {fileID: 856115663}
+  m_Layer: 5
+  m_Name: Caracol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &856115663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856115662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -3619489986763086873, guid: daea19a4513d32140b368ee6e23e6bbb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &856115664
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856115662}
+  m_CullTransparentMesh: 1
+--- !u!224 &856115665
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856115662}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.289994, y: 1.2137706, z: 1.2137706}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 383821685}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -689.6, y: 391.09995}
+  m_SizeDelta: {x: 104.8034, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &872059059
 GameObject:
   m_ObjectHideFlags: 0
@@ -7269,7 +7299,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876699495cfeebb47841fc5500dbbdb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GestorFotos
-  libretaPistas: {fileID: 342163887}
+  libretaPistas: {fileID: 0}
 --- !u!82 &1108825678
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9784,8 +9814,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 342163887}
-        m_TargetAssemblyTypeName: LibretaPistas, Assembly-CSharp
+      - m_Target: {fileID: 383821689}
+        m_TargetAssemblyTypeName: LibretaPistasUI, Assembly-CSharp
         m_MethodName: MostrarPestanaFotos
         m_Mode: 1
         m_Arguments:
@@ -13040,6 +13070,65 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.625, y: 0.8125}
   m_EdgeRadius: 0
+--- !u!1 &1737477863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1737477864}
+  - component: {fileID: 1737477866}
+  - component: {fileID: 1737477865}
+  m_Layer: 0
+  m_Name: PausaManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1737477864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737477863}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 594.4456, y: 366.60486, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1737477865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737477863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f65b374d972c6944a79d120b11a4a3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CaracolIcono
+  icono: {fileID: 856115662}
+--- !u!114 &1737477866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737477863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56759b5b12e17844db296d29d89893bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PausaJuego
+  panelPausa: {fileID: 2000808092}
 --- !u!1 &1750726455
 GameObject:
   m_ObjectHideFlags: 0
@@ -17489,52 +17578,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.625, y: 0.8125}
   m_EdgeRadius: 0
---- !u!1 &2125018145
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125018147}
-  - component: {fileID: 2125018146}
-  m_Layer: 0
-  m_Name: PruebaPistas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2125018146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125018145}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4db7dcd796362354ea2bf52eee51b195, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PruebaPista
-  libreta: {fileID: 342163887}
-  pista: '"Se encontraron huellas junto a la ventana."'
---- !u!4 &2125018147
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125018145}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 656.9396, y: 238.83482, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132251519
 GameObject:
   m_ObjectHideFlags: 0
@@ -17591,11 +17634,10 @@ SceneRoots:
   - {fileID: 1028101819}
   - {fileID: 1011669065}
   - {fileID: 872059062}
-  - {fileID: 2125018147}
-  - {fileID: 845503313}
   - {fileID: 196806500}
   - {fileID: 798302906}
   - {fileID: 1518998349}
   - {fileID: 2132251520}
   - {fileID: 1359744831}
   - {fileID: 852162208}
+  - {fileID: 1737477864}
