@@ -7,28 +7,32 @@ public class SceneTransition : MonoBehaviour
     public Animator transition;
     public float transitionTime = 1f;
 
-    private static SceneTransition instance;
+    // Nombre de la escena a la que va a ir esta transición.
+    // Se escribe a mano en el Inspector (debe coincidir EXACTO
+    // con el nombre del archivo de la escena, sin ".unity").
+    public string sceneToLoad;
 
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
+    // Usa el nombre cargado en el Inspector (sceneToLoad)
     public void LoadNextScene()
     {
-        Debug.Log("Iniciando transición");
-        StartCoroutine(LoadLevel());
+        LoadScene(sceneToLoad);
     }
 
-    IEnumerator LoadLevel()
+    // Permite pasar el nombre de la escena por parámetro,
+    // por ejemplo desde otro script o desde un botón con argumento.
+    public void LoadScene(string sceneName)
+    {
+        if (string.IsNullOrEmpty(sceneName))
+        {
+            Debug.LogWarning("No se asignó ninguna escena en sceneToLoad.");
+            return;
+        }
+
+        Debug.Log("Iniciando transición hacia: " + sceneName);
+        StartCoroutine(LoadLevel(sceneName));
+    }
+
+    IEnumerator LoadLevel(string sceneName)
     {
         // Hace la transición hacia negro
         Debug.Log("Activando animación");
@@ -38,8 +42,6 @@ public class SceneTransition : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         // Cambia de escena mientras la pantalla sigue negra
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex + 1
-        );
+        SceneManager.LoadScene(sceneName);
     }
 }

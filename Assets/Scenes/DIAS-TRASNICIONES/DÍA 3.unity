@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioAutomatico
   tiempoEspera: 5.3
-  sceneToLoad: Dormitorio-Lorenzo DIA2
+  sceneToLoad: Dormitorio-Lorenzo DIA3
 --- !u!4 &736750475
 Transform:
   m_ObjectHideFlags: 0
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xCDA 2"
+  m_text: "D\xCDA 3"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
   m_sharedMaterial: {fileID: -902842741770401196, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}

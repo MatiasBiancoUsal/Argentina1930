@@ -9815,6 +9815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   transition: {fileID: 1141561442}
   transitionTime: 1
+  sceneToLoad: "D\xCDA 4"
 --- !u!4 &1701363291
 Transform:
   m_ObjectHideFlags: 0
