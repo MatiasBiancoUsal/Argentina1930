@@ -4352,6 +4352,8 @@ MonoBehaviour:
   indicador: {fileID: 923018845}
   lineasDialogo:
   - Es un banco, nada raro.
+  audioSource: {fileID: 0}
+  sonidoInteraccion: {fileID: 0}
 --- !u!1001 &1029723862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5900,7 +5902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: BAR
+  escenaDestino: Cutscene BAR
 --- !u!61 &1289192767
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7031,7 +7033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: Dormitorio2
+  escenaDestino: Cutscene Habitacion Amigo
 --- !u!61 &1611928777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8000,7 +8002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: TIENDA
+  escenaDestino: Cutscene TIENDA
 --- !u!61 &1854821553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8141,7 +8143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  escenaDestino: Dormitorio-Lorenzo
+  escenaDestino: Cutscene Lorenzo
 --- !u!61 &1895697758
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8429,7 +8431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Colon 1
+  escenaDestino: Cutscene COLON
 --- !u!61 &1906917209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -22489,6 +22491,8 @@ MonoBehaviour:
   lineasDialogo:
   - Linea1
   - ejemplo2
+  audioSource: {fileID: 0}
+  sonidoInteraccion: {fileID: 0}
 --- !u!61 &1986096137
 BoxCollider2D:
   m_ObjectHideFlags: 0

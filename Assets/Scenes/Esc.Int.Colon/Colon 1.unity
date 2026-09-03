@@ -11237,7 +11237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Calle Ciudad TUTORIAL
+  escenaDestino: Calle Ciudad
 --- !u!1 &1527815473
 GameObject:
   m_ObjectHideFlags: 0

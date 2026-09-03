@@ -137,6 +137,21 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/DIAS-TRASNICIONES/D\xCDA 5.unity"
     guid: a9109e30feb10374dbcb1be995879acd
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene Lorenzo.unity
+    guid: 80361e13dc3fca445b6b27bc96bf590d
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene BAR.unity
+    guid: 9a7459ff507e3dc4780284b86a2aae62
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene TIENDA.unity
+    guid: 9b0231fb6ac53fc4cac949f46dee8d39
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene Habitacion Amigo.unity
+    guid: 23dae1536ca76494fbf9acb0a27f1dce
+  - enabled: 1
+    path: Assets/Scenes/Cutscene/Cutscene COLON.unity
+    guid: 53b57dca61593db4499da984e06c6ee0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
