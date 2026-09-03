@@ -232,8 +232,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 11.7, y: -0.5}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 11.7, y: -24.2518}
+  m_SizeDelta: {x: 100, y: 126.779}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58350963
 MonoBehaviour:
@@ -302,6 +302,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e838c5c5fc82a364fb694cc8337fb3b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioAutomatico
+  tiempoEspera: 5.3
+  sceneToLoad: Dormitorio-Lorenzo DIA2
 --- !u!4 &736750475
 Transform:
   m_ObjectHideFlags: 0
@@ -376,7 +378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "D\xCDA 1"
+  m_text: "D\xCDA 2"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
   m_sharedMaterial: {fileID: -902842741770401196, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
