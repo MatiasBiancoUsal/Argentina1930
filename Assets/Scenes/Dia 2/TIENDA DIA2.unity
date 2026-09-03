@@ -3613,7 +3613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Calle Ciudad
+  escenaDestino: Calle Ciudad DIA2
 --- !u!61 &1077954247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3989,6 +3989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraccion
   offsetPedido: {x: 0.3, y: 0.5, z: 0}
+  estrella: {fileID: 0}
 --- !u!114 &1108825676
 MonoBehaviour:
   m_ObjectHideFlags: 0

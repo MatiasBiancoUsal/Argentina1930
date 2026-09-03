@@ -8119,7 +8119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Calle Ciudad
+  escenaDestino: Calle Ciudad DIA5
 --- !u!1 &1520314525
 GameObject:
   m_ObjectHideFlags: 0
@@ -9815,6 +9815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransition
   transition: {fileID: 1141561442}
   transitionTime: 1
+  sceneToLoad: 
 --- !u!4 &1701363291
 Transform:
   m_ObjectHideFlags: 0
