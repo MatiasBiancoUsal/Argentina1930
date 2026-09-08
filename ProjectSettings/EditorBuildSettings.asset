@@ -141,17 +141,32 @@ EditorBuildSettings:
     path: Assets/Scenes/Dia 4/Calle Ciudad DIA4.unity
     guid: 77611cd40457cb34fa14d31a7ede0bc4
   - enabled: 1
+    path: Assets/Scenes/Dia 4/Calle Ciudad DIA4 2.unity
+    guid: 06a3cec7dd51a1e4c87d509a11c7bc78
+  - enabled: 1
+    path: Assets/Scenes/Dia 4/Calle Ciudad DIA4 3.unity
+    guid: a072807256de1aa448396bce489603d3
+  - enabled: 1
+    path: Assets/Scenes/Dia 4/Calle Ciudad DIA4 4.unity
+    guid: 6b9c2afd3b58df546bc877de4a1cfa0e
+  - enabled: 1
     path: Assets/Scenes/Dia 4/BAR DIA4.unity
     guid: e028a5305c7abe54881105b94266b3bf
   - enabled: 1
     path: Assets/Scenes/Dia 4/Dormitorio-Lorenzo DIA4.unity
     guid: 922f3e9622674c14a8a636c699c91730
   - enabled: 1
+    path: Assets/Scenes/Dia 4/Dormitorio-Lorenzo DIA4 2.unity
+    guid: d6793d8724eea8442909d906ad6df42a
+  - enabled: 1
     path: Assets/Scenes/Dia 4/Dormitorio2 DIA4.unity
     guid: 7f4fd71577b7be7478af08c185ec4157
   - enabled: 1
     path: Assets/Scenes/Dia 4/TIENDA DIA4.unity
     guid: 5d8459f8582049c4786968abb68bed50
+  - enabled: 1
+    path: Assets/Scenes/Dia 4/Callejon DIA4.unity
+    guid: 56ce27241c7b50e47999a81fb26892c3
   - enabled: 1
     path: Assets/Scenes/Dia 5/Calle Ciudad DIA5.unity
     guid: 6d4486fcfa3bd2646b0bc5cef07bde71
