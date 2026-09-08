@@ -4384,6 +4384,8 @@ MonoBehaviour:
   indicador: {fileID: 923018845}
   lineasDialogo:
   - Es un banco, nada raro.
+  audioSource: {fileID: 0}
+  sonidoInteraccion: {fileID: 0}
 --- !u!1001 &1029723862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5606,7 +5608,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 66710a7bb74254647acec46a9e08ab76, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -22489,6 +22491,8 @@ MonoBehaviour:
   lineasDialogo:
   - Linea1
   - ejemplo2
+  audioSource: {fileID: 0}
+  sonidoInteraccion: {fileID: 0}
 --- !u!61 &1986096137
 BoxCollider2D:
   m_ObjectHideFlags: 0
