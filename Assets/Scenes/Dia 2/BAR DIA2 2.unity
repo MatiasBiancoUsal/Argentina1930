@@ -5691,7 +5691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Calle Ciudad DIA2
+  escenaDestino: Calle Ciudad DIA2 4
 --- !u!61 &1077954247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9248,7 +9248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f4740b38378ccb4e8bff0420b12fbbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambioEscena
-  escenaDestino: Borges dialogo
+  escenaDestino: Charla Con Borges
 --- !u!61 &1642518064
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14363,7 +14363,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Habla con Borges '
+  m_text: 'Persigue a los sospechosos '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
   m_sharedMaterial: {fileID: -902842741770401196, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
