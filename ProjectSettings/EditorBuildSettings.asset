@@ -278,6 +278,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscene/Cutscene COLON.unity
     guid: 53b57dca61593db4499da984e06c6ee0
+  - enabled: 1
+    path: Assets/Scenes/Esc.Int.Colon/Colon 3.unity
+    guid: 4b1514556b401134a8445618a70f5007
+  - enabled: 1
+    path: Assets/Scenes/Esc.Int.Colon/Colon 4.unity
+    guid: 13ed43baa3355bc4d9fc703a33d63065
+  - enabled: 0
+    path: Assets/Scenes/Esc.Int.Colon/Colon 5.unity
+    guid: 44e967fae934c4946ba6123c89cb8c99
+  - enabled: 1
+    path: Assets/Scenes/Esc.Int.Colon/Colon Final.unity
+    guid: 22d48ec4d2a902642aa5feae4bc11e87
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
