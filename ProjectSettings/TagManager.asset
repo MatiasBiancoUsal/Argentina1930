@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - estrella
+  - Enemigo
   layers:
   - Default
   - TransparentFX
