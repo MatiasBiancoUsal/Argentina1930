@@ -13,19 +13,27 @@ public class PJPoliMov : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
     {
         movimientoX = Input.GetAxisRaw("Horizontal");
+        animator.SetBool("camina", false);
 
         if (movimientoX > 0)
         {
             sr.flipX = false; // Mira hacia la derecha
+            animator.SetBool("camina", true);
         }
         else if (movimientoX < 0)
         {
             sr.flipX = true; // Mira hacia la izquierda
+            animator.SetBool("camina", true);
+        }
+        else if (movimientoX == 0)
+        {
+            animator.SetBool("camina", false);
         }
     }
 

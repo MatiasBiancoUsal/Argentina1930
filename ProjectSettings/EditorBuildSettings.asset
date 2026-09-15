@@ -60,7 +60,7 @@ EditorBuildSettings:
     path: Assets/Scenes/TUTORIAL/BAR TUTORIALBAR TUTORIAL.unity
     guid: e3546a17adbb00d4690e9f12a4505163
   - enabled: 1
-    path: Assets/Scenes/Esc.Int.Colon/Colon 2.unity
+    path: Assets/Scenes/Esc.Int.Colon/ANULADA.unity
     guid: 4911e327e896eb44eb87c5a93aaecd28
   - enabled: 1
     path: Assets/Scenes/Prueba Enemigos en Calle Ciudad.unity
@@ -279,7 +279,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Cutscene/Cutscene COLON.unity
     guid: 53b57dca61593db4499da984e06c6ee0
   - enabled: 1
-    path: Assets/Scenes/Esc.Int.Colon/Colon 3.unity
+    path: Assets/Scenes/Esc.Int.Colon/Colon 2.unity
     guid: 4b1514556b401134a8445618a70f5007
   - enabled: 1
     path: Assets/Scenes/Esc.Int.Colon/Colon 4.unity
