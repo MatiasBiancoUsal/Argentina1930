@@ -9151,7 +9151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoPensamiento
   panelDialogo: {fileID: 415465258}
   nombrePersonaje: Lorenzo
-  retratoPersonaje: {fileID: -1597188336547182666, guid: d5d57bd5d591e1143b296d55ed8bca0e, type: 3}
+  retratoPersonaje: {fileID: -2790312466828952427, guid: 6f1a3074453ab62499bb29d2e7d5ba1c, type: 3}
   lineasPensamiento:
   - mm tengo que visitar a Donato.
   - "Creo que todav\xEDa le debo algunas cosas..."
