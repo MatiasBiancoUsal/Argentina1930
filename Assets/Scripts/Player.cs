@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
             movimiento.Normalize();
 
         // Toggle Sigilo con X
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.X))
         {
             enSigilo = !enSigilo;
             Debug.Log("Sigilo: " + (enSigilo ? "ACTIVADO" : "DESACTIVADO"));
