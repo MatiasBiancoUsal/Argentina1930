@@ -916,7 +916,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -938,11 +944,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: 208ca594-0cde-4dae-8f2c-334169818359
+  cloudProjectId: d804b3aa-34b7-48cf-a429-a53b328e20c4
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Para copiar y pegar
-  organizationId: felipecaruso
+  projectName: Argentina 1930
+  organizationId: usal-2026-not-home
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}
