@@ -9,30 +9,27 @@ public class PlayerInteraccion : MonoBehaviour
 
     [Header("Posicion del pedido sobre el personaje")]
     public Vector3 offsetPedido = new Vector3(0.3f, 0.5f, 0f);
-    
+
 
     private GameManager gameManager;
 
     private Animator animator;
     [SerializeField] public GameObject estrella;
 
+    // ANALYTICS: plata ganada en el turno de trabajo
+    private int dineroGanadoTurno = 0;
+    private bool trabajoTerminado = false;
+
     void Awake()
     {
         gameManager = FindFirstObjectByType<GameManager>();
         animator = GetComponent<Animator>();
-        
-
     }
-
-    
 
     void Update()
     {
-        
         if (Input.GetKeyDown(KeyCode.Space))
             Interactuar();
-        
-
     }
 
     void Interactuar()
@@ -41,7 +38,10 @@ public class PlayerInteraccion : MonoBehaviour
         if (pedidoEnMano != null && barraEnRango != null)
         {
             if (barraEnRango.IntentarDejarPedido(pedidoEnMano))
+            {
                 pedidoEnMano = null;
+                AnalyticsManager.Instance?.Interact("Barra"); // ANALYTICS: interact
+            }
             return;
         }
 
@@ -57,6 +57,11 @@ public class PlayerInteraccion : MonoBehaviour
                 }
                 pedidoEnMano = null;
                 gameManager.AgregarMoneda();
+
+                // ANALYTICS: interact + chequeo de fin del trabajo
+                dineroGanadoTurno++;
+                AnalyticsManager.Instance?.Interact("Cliente");
+                ChequearFinTrabajo();
             }
             return;
         }
@@ -77,6 +82,8 @@ public class PlayerInteraccion : MonoBehaviour
                 }
                 // Tutorial: paso 4 — entregar al cliente
                 gameManager.TutorialPedidoRecogido();
+
+                AnalyticsManager.Instance?.Interact("Barra"); // ANALYTICS: interact
             }
             return;
         }
@@ -89,9 +96,27 @@ public class PlayerInteraccion : MonoBehaviour
                 pedidoEnMano = npcEnRango;
                 // Tutorial: paso 2 — llevar a la barra
                 gameManager.TutorialPedidoRecibido();
+
+                AnalyticsManager.Instance?.Interact("Cliente"); // ANALYTICS: interact
             }
             return;
         }
+    }
+
+    // ANALYTICS: work_complete cuando todos los clientes del bar quedaron satisfechos
+    void ChequearFinTrabajo()
+    {
+        if (trabajoTerminado) return;
+
+        NPCPedido[] clientes = FindObjectsByType<NPCPedido>(FindObjectsSortMode.None);
+        foreach (NPCPedido cliente in clientes)
+        {
+            if (cliente.estado != NPCPedido.EstadoNPC.Satisfecho)
+                return; // todavía queda alguien por atender
+        }
+
+        trabajoTerminado = true;
+        AnalyticsManager.Instance?.WorkComplete(dineroGanadoTurno);
     }
 
     void OnTriggerEnter2D(Collider2D other)

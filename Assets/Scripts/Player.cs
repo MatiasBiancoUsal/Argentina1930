@@ -40,6 +40,13 @@ public class Player : MonoBehaviour
 
     [SerializeField] private AudioClip clipPasos;
 
+    // ANALYTICS: idle_time
+    [Header("Analytics")]
+    [Tooltip("Segundos quieto para mandar idle_time")]
+    [SerializeField] private float limiteIdle = 10f;
+    private float tiempoQuieto = 0f;
+    private bool idleEnviado = false;
+
 
 
 
@@ -101,6 +108,22 @@ public class Player : MonoBehaviour
         // Normalizar para evitar movimiento diagonal m�s r�pido
         if (movimiento.magnitude > 1f)
             movimiento.Normalize();
+
+        // ANALYTICS: idle_time (se manda UNA vez por cada período quieto)
+        if (movimiento == Vector2.zero)
+        {
+            tiempoQuieto += Time.deltaTime;
+            if (tiempoQuieto > limiteIdle && !idleEnviado)
+            {
+                AnalyticsManager.Instance?.IdleTime(tiempoQuieto);
+                idleEnviado = true;
+            }
+        }
+        else
+        {
+            tiempoQuieto = 0f;
+            idleEnviado = false;
+        }
 
         // Toggle Sigilo con X
         if (Input.GetKeyDown(KeyCode.X))

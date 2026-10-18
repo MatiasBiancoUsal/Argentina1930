@@ -1,22 +1,22 @@
 ﻿using UnityEngine;
 
-// Enemigo 2D top-down: patrulla, detecta al jugador (si no est� en sigilo) y lo persigue.
-// Al alcanzarlo, reinicia el nivel a trav�s de LevelManager.
+// Enemigo 2D top-down: patrulla, detecta al jugador (si no está en sigilo) y lo persigue.
+// Al alcanzarlo, reinicia el nivel a travs de LevelManager.
 // Requiere: Rigidbody2D (gravity scale 0) y opcionalmente un Animator con los mismos
-// par�metros que usa Player.cs (MovimientoX, MovimientoY, Caminando).
+// parámetros que usa Player.cs (MovimientoX, MovimientoY, Caminando).
 public class Enemigo : MonoBehaviour
 {
     public enum State { Patrol, Chase }
 
     [Header("Referencias")]
-    [Tooltip("Si lo dej�s vac�o, se busca autom�ticamente el objeto con tag 'Player'.")]
+    [Tooltip("Si lo dejás vaco, se busca automáticamente el objeto con tag 'Player'.")]
     [SerializeField] private Transform jugador;
-    [Tooltip("El script Player.cs del jugador, para leer 'enSigilo'. Se autocompleta si dej�s 'Jugador' vac�o.")]
+    [Tooltip("El script Player.cs del jugador, para leer 'enSigilo'. Se autocompleta si dejás 'Jugador' vaco.")]
     [SerializeField] private Player playerScript;
 
-    [Header("Detecci�n")]
+    [Header("Detección")]
     [SerializeField] private float rangoVision = 5f;
-    [Tooltip("Capas que bloquean la l�nea de visi�n (paredes). Dejar en 'Nothing' para ignorar obst�culos.")]
+    [Tooltip("Capas que bloquean la línea de visión (paredes). Dejar en 'Nothing' para ignorar obstáculos.")]
     [SerializeField] private LayerMask capaObstaculos;
     [SerializeField] private float distanciaMuerte = 0.5f;
 
@@ -27,6 +27,12 @@ public class Enemigo : MonoBehaviour
     [Header("Patrulla (opcional)")]
     [SerializeField] private Transform[] puntosPatrulla;
     [SerializeField] private float tiempoEsperaPatrulla = 2f;
+
+    [Header("Analytics")]
+    [SerializeField] private string tipoEnemigo = "Policia";
+    [Tooltip("Número distinto para cada enemigo de la escena")]
+    [SerializeField] private int enemigoId = 1;
+    [SerializeField] private int danioAlAtrapar = 1;
 
     [Header("Reinicio de nivel")]
     [SerializeField] private float delayReinicio = 1f;
@@ -83,13 +89,13 @@ public class Enemigo : MonoBehaviour
     {
         if (jugador == null || playerScript == null) return;
 
-        // Si el jugador est� en sigilo, no lo detectamos aunque est� cerca.
+        // Si el jugador está en sigilo, no lo detectamos aunque está cerca.
         if (playerScript.enSigilo) return;
 
         float distancia = Vector2.Distance(transform.position, jugador.position);
         if (distancia > rangoVision) return;
 
-        // L�nea de visi�n opcional: solo se chequea si asignaste una capa de obst�culos.
+        // Lnea de visión opcional: solo se chequea si asignaste una capa de obstáculos.
         if (capaObstaculos.value != 0)
         {
             Vector2 direccion = ((Vector2)jugador.position - (Vector2)transform.position).normalized;
@@ -98,6 +104,10 @@ public class Enemigo : MonoBehaviour
         }
 
         estadoActual = State.Chase;
+
+        // ANALYTICS: enemy_detect_player + enemy_chase_start
+        AnalyticsManager.Instance?.EnemyDetectPlayer(tipoEnemigo);
+        AnalyticsManager.Instance?.EnemyChaseStart(enemigoId);
     }
 
     private void Perseguir()
@@ -116,10 +126,13 @@ public class Enemigo : MonoBehaviour
         }
 
         // Si el jugador vuelve a esconderse y se aleja lo suficiente, el enemigo lo pierde.
-        // Sac� este bloque si prefer�s que persiga sin soltar una vez que te vio.
+        // Sacá este bloque si preferís que persiga sin soltar una vez que te vio.
         if (playerScript != null && playerScript.enSigilo && distancia > rangoVision)
         {
             estadoActual = State.Patrol;
+
+            // ANALYTICS: enemy_chase_escape (true) + enemy_chase_time
+            AnalyticsManager.Instance?.EnemyChaseEnd(enemigoId, true);
         }
     }
 
@@ -166,6 +179,10 @@ public class Enemigo : MonoBehaviour
         if (jugadorAtrapado) return;
         jugadorAtrapado = true;
 
+        // ANALYTICS: enemy_chase_escape (false) + enemy_chase_time + player_hit
+        AnalyticsManager.Instance?.EnemyChaseEnd(enemigoId, false);
+        AnalyticsManager.Instance?.PlayerHit(danioAlAtrapar);
+
         Debug.Log("Jugador atrapado. Reiniciando nivel...");
 
         if (RestartManager.Instance != null)
@@ -178,7 +195,7 @@ public class Enemigo : MonoBehaviour
         }
     }
 
-    // Rango de detecci�n visible en el editor para ajustarlo a ojo.
+    // Rango de detección visible en el editor para ajustarlo a ojo.
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

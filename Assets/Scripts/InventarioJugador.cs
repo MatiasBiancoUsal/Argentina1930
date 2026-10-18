@@ -30,9 +30,12 @@ public class InventarioJugador : MonoBehaviour
 
         if (item == "Camara")
         {
-            ActivadorCamara activador = FindObjectOfType<ActivadorCamara>();
+            ActivadorCamara activador = FindFirstObjectByType<ActivadorCamara>();
             if (activador != null)
                 activador.ActivarBoton();
+
+            // ANALYTICS: camera_obtained
+            AnalyticsManager.Instance?.CameraObtained();
         }
 
         Debug.Log("Inventario: " + string.Join(", ", items));
@@ -47,11 +50,4 @@ public class InventarioJugador : MonoBehaviour
     {
         return items;
     }
-
-
-
-
-    
-
-
 }

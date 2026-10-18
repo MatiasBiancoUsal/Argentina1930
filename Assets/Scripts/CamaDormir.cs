@@ -13,7 +13,10 @@ public class Cama : MonoBehaviour
         if (jugadorCerca && Input.GetKeyDown(KeyCode.E))
         {
             Debug.Log("Durmiendo...");
-             Debug.Log("E presionada");
+            Debug.Log("E presionada");
+
+            // ANALYTICS: interact
+            AnalyticsManager.Instance?.Interact(gameObject.name);
 
             sceneTransition.LoadNextScene();
         }

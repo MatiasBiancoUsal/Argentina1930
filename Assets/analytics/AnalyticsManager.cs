@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Librerías de autenticación y servicios (como en el PDF de la clase)
 
@@ -27,6 +28,9 @@ public class AnalyticsManager : MonoBehaviour
     [Tooltip("true = además de enviar, imprime cada evento en la consola")]
     [SerializeField] private bool mostrarEnConsola = true;
 
+    [Tooltip("Escenas que NO cuentan como 'lugar' para scene_enter")]
+    [SerializeField] private string[] escenasIgnoradas = { "MenuPrincipal" };
+
     // ─────────────── ESTADO INTERNO ───────────────
     private bool inicializado = false;
 
@@ -43,7 +47,8 @@ public class AnalyticsManager : MonoBehaviour
     // Momento en que empezó la persecución de cada enemigo (por id)
     private readonly Dictionary<int, float> inicioPersecucion = new Dictionary<int, float>();
 
-    private bool juegoCerrado = false;
+    // true desde que el jugador apreta Jugar hasta que sale al menú o cierra el juego
+    private bool nivelIniciado = false;
 
     // ─────────────── INICIALIZACIÓN ───────────────
     void Awake()
@@ -55,6 +60,26 @@ public class AnalyticsManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject); // sobrevive a los cambios de escena
+
+        // scene_enter se manda solo cada vez que se carga una escena
+        SceneManager.sceneLoaded += AlCargarEscena;
+    }
+
+    void OnDestroy()
+    {
+        if (Instance == this)
+        {
+            SceneManager.sceneLoaded -= AlCargarEscena;
+            Instance = null;
+        }
+    }
+
+    private void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    {
+        foreach (string ignorada in escenasIgnoradas)
+            if (escena.name == ignorada) return;
+
+        SceneEnter(escena.name);
     }
 
     async void Start() // los métodos async son como corrutinas
@@ -109,6 +134,8 @@ public class AnalyticsManager : MonoBehaviour
     {
         tiempoInicioNivel = Time.time;
         tiempoInicioObjetivo = Time.time;
+        ultimoObjetivo = 0;
+        nivelIniciado = true;
 
         Enviar(new CustomEvent("level_start")
         {
@@ -361,10 +388,11 @@ public class AnalyticsManager : MonoBehaviour
     }
 
     /// game_quit → Llamarlo al salir al menú. Al cerrar el juego se llama solo.
+    /// Solo se manda si el jugador estaba jugando (evita duplicados).
     public void GameQuit()
     {
-        if (juegoCerrado) return; // evita mandarlo dos veces
-        juegoCerrado = true;
+        if (!nivelIniciado) return;
+        nivelIniciado = false;
 
         Enviar(new CustomEvent("game_quit")
         {

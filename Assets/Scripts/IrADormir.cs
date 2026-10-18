@@ -11,6 +11,9 @@ public class IrADormir : MonoBehaviour
             LevelManager.Instance.IrADormir &&
             Input.GetKeyDown(KeyCode.E))
         {
+            // ANALYTICS: interact
+            AnalyticsManager.Instance?.Interact(gameObject.name);
+
             LoadNextLevel();
         }
     }

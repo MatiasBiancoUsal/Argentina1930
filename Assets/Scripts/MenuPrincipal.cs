@@ -5,6 +5,9 @@ public class MenuPrincipal : MonoBehaviour
 {
     public void IrAJuego()
     {
+        // ANALYTICS: level_start (arranca el nivel y los cronómetros)
+        AnalyticsManager.Instance?.LevelStart(1);
+
         SceneManager.LoadScene(1);
     }
 

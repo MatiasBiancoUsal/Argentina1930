@@ -34,6 +34,9 @@ public class PausaJuego : MonoBehaviour
         if (pausado)
         {
             Time.timeScale = 0f;
+
+            // ANALYTICS: game_pause
+            AnalyticsManager.Instance?.GamePause();
         }
         else
         {
@@ -43,6 +46,9 @@ public class PausaJuego : MonoBehaviour
 
     public void IrAlMenu()
     {
+        // ANALYTICS: game_quit (abandonó al salir al menú)
+        AnalyticsManager.Instance?.GameQuit();
+
         Time.timeScale = 1f;
         SceneManager.LoadScene("MenuPrincipal");
     }
