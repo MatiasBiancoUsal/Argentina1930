@@ -830,10 +830,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lorenzo. Justo el hombre que necesitaba encontrar.\n\nEl s\xE1bado hay
-    una funci\xF3n especial en el Col\xF3n. Tiene que ir.\n\nInsisto. No todos los
-    d\xEDas se presenta algo as\xED.\n\nEso no deber\xEDa detenerlo. Una buena historia
-    es af\xEDn a todo el mundo, tenga los bolsillos llenos o vac\xEDos."
+  m_text: "\u2014Perdoname, has despertado mi curiosidad. \xBFSos nuevo en este bar?
+    Lo frecuento desde hace tiempo y no recuerdo haberte visto. Aunque, claro, uno
+    nunca sabe hasta qu\xE9 punto conoce los lugares que frecuenta.\r\n\r\n\u2014\xBFEsper\xE1s
+    con cierta impaciencia lo del domingo en el Col\xF3n?\r\n\r\n\u2014\xBFC\xF3mo?
+    \xBFNo te has enterado? El domingo habr\xE1 una funci\xF3n de \xF3pera en el
+    Col\xF3n. Una ocasi\xF3n que, me parece, no convendr\xEDa desde\xF1ar. La \xF3pera
+    tiene algo curioso: uno puede ignorar por completo la historia que se cuenta
+    y, sin embargo, sentir que ha asistido a algo importante. Ser\xEDa una l\xE1stima
+    perd\xE9rsela. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
   m_sharedMaterial: {fileID: -4575529973378270013, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
@@ -860,8 +865,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.86
-  m_fontSizeBase: 33.86
+  m_fontSize: 28.98
+  m_fontSizeBase: 28.98
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

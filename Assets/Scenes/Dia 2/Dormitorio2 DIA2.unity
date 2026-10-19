@@ -2843,10 +2843,16 @@ MonoBehaviour:
   pistaPorDialogo: {fileID: 532462433}
   indicador: {fileID: 1208575160}
   lineasDialogo:
-  - Esto es una pista
-  - "M\xE1s detalles de la pista\n"
+  - "\xA1Lorenzo! \xA1Viejo amigo! \xBFA qu\xE9 se debe esta pinta de mesero?"
+  - Veo que no seguiste mi consejo... Renunciar al trabajo de detective es un error.
+  - "Uno no puede negar su vocaci\xF3n. Yo tambi\xE9n he intentado dejar de ser detective. "
+  - "La buena noticia es que, al conseguir laburo, vas a poder pagarme la c\xE1mara
+    que te prest\xE9. "
+  - "\xBFA qui\xE9n se le ocurre fotografiar a sospechosos sin ser sigiloso?\r\n"
   audioSource: {fileID: 194707715}
   sonidoInteraccion: {fileID: 8300000, guid: 2ed06ac6b39f0194b98f43afdf1d6c44, type: 3}
+  dia: 1
+  terminaNivel: 0
 --- !u!61 &532462432
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6753,6 +6759,7 @@ MonoBehaviour:
   panelDialogo: {fileID: 0}
   panelObjeto: {fileID: 0}
   clipPasos: {fileID: 0}
+  limiteIdle: 10
 --- !u!50 &1108825670
 Rigidbody2D:
   serializedVersion: 5
