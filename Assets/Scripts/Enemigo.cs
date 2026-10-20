@@ -29,7 +29,7 @@ public class Enemigo : MonoBehaviour
     [SerializeField] private float tiempoEsperaPatrulla = 2f;
 
     [Header("Analytics")]
-    [SerializeField] private string tipoEnemigo = "Policia";
+    [SerializeField] private string tipoEnemigo = "Enemigo Callejon";
     [Tooltip("Número distinto para cada enemigo de la escena")]
     [SerializeField] private int enemigoId = 1;
     [SerializeField] private int danioAlAtrapar = 1;

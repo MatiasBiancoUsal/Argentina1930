@@ -4,6 +4,7 @@ public class HuidaEnemigo : MonoBehaviour
 {
     public GameObject ObjetoAmover1;
    
+    
 
     public Transform StartPoint;
     public Transform EndPoint;
@@ -11,10 +12,11 @@ public class HuidaEnemigo : MonoBehaviour
     public float Velocidad = 1f;
 
     public Sprite spriteVigilante;
+    
 
     private SpriteRenderer spriteRenderer;
     private bool mover = false;
-
+    
     private void Start()
     {
         // Coloca el objeto en el punto inicial
@@ -22,8 +24,12 @@ public class HuidaEnemigo : MonoBehaviour
 
         // Obtiene el SpriteRenderer
         spriteRenderer = ObjetoAmover1.GetComponent<SpriteRenderer>();
+
         
-        
+
+
+
+
     }
 
     private void Update()
@@ -43,7 +49,11 @@ public class HuidaEnemigo : MonoBehaviour
                 mover = false;
             }
         }
-        
+
+       
+
+
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)

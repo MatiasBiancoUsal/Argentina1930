@@ -2867,6 +2867,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2560184624349222297, guid: f57792aa8df05064ba36206bbb3b6333, type: 3}
+      propertyPath: tipoEnemigo
+      value: Enemigo Callejon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2560184624349222297, guid: f57792aa8df05064ba36206bbb3b6333, type: 3}
       propertyPath: puntosPatrulla.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -26384,6 +26388,10 @@ PrefabInstance:
       propertyPath: jugador
       value: 
       objectReference: {fileID: 1108825667}
+    - target: {fileID: 2560184624349222297, guid: f57792aa8df05064ba36206bbb3b6333, type: 3}
+      propertyPath: tipoEnemigo
+      value: Enemigo Callejon
+      objectReference: {fileID: 0}
     - target: {fileID: 2560184624349222297, guid: f57792aa8df05064ba36206bbb3b6333, type: 3}
       propertyPath: playerScript
       value: 
