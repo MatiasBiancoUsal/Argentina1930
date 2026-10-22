@@ -1289,12 +1289,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lorenzo. Necesito hablar con usted.\n\nAyer lo vi salir del puesto antes
-    de hora. Sin avisar, sin permiso, sin una palabra.\n\n\xBFSabe lo que significa
-    dejar el mostrador solo en medio de la tarde? Cualquiera pudo haber entrado a
-    robar, o peor.\n\nNo es la primera vez que noto estas cosas, pero va a ser la
-    \xFAltima que se las paso por alto.\n\nSi vuelve a pasar, no hace falta que vuelva
-    m\xE1s. \xBFEntendido?\n\nAhora vaya a trabajar"
+  m_text: "\u2014Lorenzo, necesito hablar con usted. Ayer abandon\xF3 el puesto antes
+    de hora, sin permiso ni explicaci\xF3n. No puedo permitir que deje el mostrador
+    desatendido. Se lo advierto por \xFAltima vez: si vuelve a ocurrir, est\xE1 despedido.
+    \xBFEntendido? Ahora, vuelva al trabajo."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
   m_sharedMaterial: {fileID: -4575529973378270013, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
