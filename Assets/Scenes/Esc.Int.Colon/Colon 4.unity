@@ -7807,7 +7807,7 @@ MonoBehaviour:
   ObjetoAmover: {fileID: 725377582}
   StartPoint: {fileID: 1519573609}
   EndPoint: {fileID: 556378355}
-  Velocidad: 6
+  Velocidad: 5
   spriteVigilante: {fileID: -3560541613602492331, guid: e5229abf3a8da614981aba9ef98091c4, type: 3}
   tipoEnemigo: Vigilante
   danioAlAtrapar: 1
@@ -7846,7 +7846,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0.328125}
-  m_Size: {x: 2, y: 0.65625}
+  m_Size: {x: 1.84, y: 0.65625}
   m_Direction: 0
 --- !u!95 &725377586
 Animator:

@@ -3312,6 +3312,8 @@ MonoBehaviour:
   EndPoint: {fileID: 1987624280}
   Velocidad: 3
   spriteVigilante: {fileID: -3560541613602492331, guid: e5229abf3a8da614981aba9ef98091c4, type: 3}
+  tipoEnemigo: Vigilante
+  danioAlAtrapar: 1
 --- !u!1 &606511418
 GameObject:
   m_ObjectHideFlags: 0
@@ -4905,6 +4907,8 @@ MonoBehaviour:
   EndPoint: {fileID: 694638648}
   Velocidad: 4
   spriteVigilante: {fileID: -1223793001230187887, guid: 6295097256fe2a148ab8021439da2415, type: 3}
+  tipoEnemigo: Vigilante
+  danioAlAtrapar: 1
 --- !u!70 &733978803
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -10209,7 +10213,8 @@ MonoBehaviour:
   velocidadAgachado: 1.5
   panelDialogo: {fileID: 0}
   panelObjeto: {fileID: 0}
-  clipPasos: {fileID: 0}
+  clipPasos: {fileID: 8300000, guid: 7709088ac0e2632458fc1d52b7926613, type: 3}
+  limiteIdle: 10
 --- !u!50 &1108825670
 Rigidbody2D:
   serializedVersion: 5
@@ -20162,6 +20167,8 @@ MonoBehaviour:
   EndPoint: {fileID: 1154252418}
   Velocidad: 4
   spriteVigilante: {fileID: -3560541613602492331, guid: e5229abf3a8da614981aba9ef98091c4, type: 3}
+  tipoEnemigo: Vigilante
+  danioAlAtrapar: 1
 --- !u!70 &2080508666
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
