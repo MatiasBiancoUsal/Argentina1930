@@ -2843,13 +2843,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogos
   panelDialogo: {fileID: 246301971}
-  nombreNPC: Amigo
+  nombreNPC: DONATO
   retratoNPC: {fileID: -3027110379635062920, guid: 708f2770d50d8db4b95cf10f5e7b74e4, type: 3}
   pistaPorDialogo: {fileID: 532462433}
   indicador: {fileID: 1208575160}
   lineasDialogo:
-  - Esto es una pista
-  - "M\xE1s detalles de la pista\n"
+  - "Veo que compraste la c\xE1mara"
+  - "\xBFQue? \xBFMafiosos en el bar?"
+  - "y... \xBFNo los investigaste?"
+  - "Una simple descripcion no me basta, lo sab\xE9s bien"
+  - "Tengo una idea, si los volv\xE9s a ver tomales una fotograf\xEDa"
+  - "Y me la tra\xE9s as\xED te puedo averiguar quienes son \xA1Como en los viejos
+    tiempos!"
+  - No me importa que no quiereas, me lo debes...
+  - "Sab\xE9s bien que ese modelo de c\xE1mara no es nada en comparaci\xF3n a la
+    que te di."
   audioSource: {fileID: 1840480990}
   sonidoInteraccion: {fileID: 8300000, guid: 2ed06ac6b39f0194b98f43afdf1d6c44, type: 3}
   dia: 1
@@ -2912,7 +2920,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15fd0891e9c345d4bae9a9e2dcd448de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  pista: Pista-amigo prueba
+  pista: "Tomar fotograf\xEDa de los mafiosos"
 --- !u!1 &533406841
 GameObject:
   m_ObjectHideFlags: 0
@@ -4368,8 +4376,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
+  m_sharedMaterial: {fileID: -902842741770401196, guid: 0327266790fe89c4ebed2c1bbf3a0ce6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4435,7 +4443,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &779514929
@@ -7162,7 +7170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -33.700027, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1236722596
@@ -7187,8 +7195,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
+  m_sharedMaterial: {fileID: -4575529973378270013, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7251,7 +7259,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -219.22496, w: -52.283783}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
