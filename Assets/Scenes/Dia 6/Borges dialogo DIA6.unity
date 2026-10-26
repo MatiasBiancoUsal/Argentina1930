@@ -1085,12 +1085,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Lorenzo, qu\xE9 casualidad encontrarlo.\n\nMa\xF1ana se efect\xFAa la
-    funci\xF3n en el Col\xF3n. Y no una cualquiera: van a estar los invitados m\xE1s
-    importantes de la ciudad.\n\nVa a estar el intendente, alg\xFAn juez, un par
-    de empresarios del puerto...\n\nY tambi\xE9n esa joven promesa de la pol\xEDtica.
-    El que anda prometiendo terminar con la corrupci\xF3n en cada esquina de esta
-    ciudad"
+  m_text: "Lorenzo, qu\xE9 grata casualidad.\r\n\r\nMa\xF1ana hay funci\xF3n en el
+    Col\xF3n. Estar\xE1 presente lo m\xE1s distinguido de nuestra ciudad.\r\n\r\n\xBFQui\xE9nes?
+    No sabr\xEDa decirle. Aunque asistir\xE1 ese joven pol\xEDtico que promete acabar
+    con la corrupci\xF3n. Un hombre que, a juzgar por sus discursos, debe de ser
+    el \xFAnico honrado de Buenos Aires."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
   m_sharedMaterial: {fileID: -4575529973378270013, guid: 7a1b920932869de46aa480b6da3aa15a, type: 2}
