@@ -1386,8 +1386,8 @@ Transform:
   m_GameObject: {fileID: 285268545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 39.04, y: 1.6691, z: 0}
-  m_LocalScale: {x: 20.65, y: 13.51931, z: 1.3527766}
+  m_LocalPosition: {x: 39.744, y: 1.6691, z: 0}
+  m_LocalScale: {x: 30.874115, y: 13.51931, z: 1.3527766}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -2849,15 +2849,13 @@ MonoBehaviour:
   indicador: {fileID: 1208575160}
   lineasDialogo:
   - "Veo que compraste la c\xE1mara"
-  - "\xBFQue? \xBFMafiosos en el bar?"
-  - "y... \xBFNo los investigaste?"
-  - "Una simple descripcion no me basta, lo sab\xE9s bien"
-  - "Tengo una idea, si los volv\xE9s a ver tomales una fotograf\xEDa"
-  - "Y me la tra\xE9s as\xED te puedo averiguar quienes son \xA1Como en los viejos
-    tiempos!"
-  - No me importa que no quiereas, me lo debes...
-  - "Sab\xE9s bien que ese modelo de c\xE1mara no es nada en comparaci\xF3n a la
-    que te di."
+  - "\xBFQu\xE9? \xBFViste mafiosos en el bar?"
+  - "Y... \xBFno los investigaste?"
+  - "Una simple patente de un auto no me basta, lo sab\xE9s bien."
+  - "Tengo una idea. Sacales una fotograf\xEDa y tra\xE9mela."
+  - "Como en los viejos tiempos. Yo me encargo de averiguar qui\xE9nes son."
+  - "No importa que te niegues, me lo deb\xE9s..."
+  - "Sab\xE9s bien que la c\xE1mara que te prest\xE9 era mucho mejor que esa."
   audioSource: {fileID: 1840480990}
   sonidoInteraccion: {fileID: 8300000, guid: 2ed06ac6b39f0194b98f43afdf1d6c44, type: 3}
   dia: 1

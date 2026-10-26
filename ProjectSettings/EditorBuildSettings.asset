@@ -290,6 +290,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Esc.Int.Colon/Colon 5.unity
     guid: 44e967fae934c4946ba6123c89cb8c99
+  - enabled: 1
+    path: Assets/Scenes/Dia 7/JEFE2 dialogo.unity
+    guid: e15ce7f5d4fac374ea8b20129e23dcba
+  - enabled: 1
+    path: Assets/Scenes/Dia 7/BAR 2 DIA7.unity
+    guid: 2bb0f9b8e282dbb4c98bc5d9b6dcef06
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
